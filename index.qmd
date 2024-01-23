@@ -1,9 +1,9 @@
-# Preface {.unnumbered}
+# \# About 
 
-This is a Quarto book.
+Hello to all. I am Ana :)
 
-To learn more about Quarto books visit <https://quarto.org/docs/books>.
+First of all, I am a proud Colombian woman, very interested in understanding socio-cultural, economic and environmental behaviors around me, and commited to improving livelyhoods and conditions for people and communities around the world.
 
-```{r}
-1 + 1
-```
+I studied anthropology for my undergrad and later finished an MSc in Sustainable Development, currently I am studying an MSc in Social and Geographic Data Science. I have more than 8 years of experience working in rural development in Colombia, analyzing and developing different economic activities that contribute to both cultural and environmental conservation, as well as coordinating efforts with regional governments, NGO's and the environmental sector.
+
+My expectation with this masters, and this specific course, is to adquire as many tools and skills in social and environmental data collection and analysis, that will permit me to continue designing, implementing and evaluating development projects and programs.

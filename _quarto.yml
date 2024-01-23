@@ -2,13 +2,19 @@ project:
   type: book
 
 book:
-  title: "CASA0023 Personal Diary"
-  author: "Norah Jones"
+  title: "CASA0023 - Personal Diary"
+  author: "Ana Steiner"
   date: "1/23/2024"
   chapters:
     - index.qmd
-    - intro.qmd
-    - summary.qmd
+    - week 1.qmd
+    - week 2.qmd
+    - week 3.qmd
+    - week 4.qmd
+    - week 5.qmd
+    - week 6.qmd
+    - week 7.qmd
+    - week 8.qmd
     - references.qmd
 
 bibliography: references.bib

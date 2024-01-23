@@ -4,4 +4,12 @@ title: "Week 2"
 
 \-\--
 
-\##
+Here is a short presentation discussing the Sentinel 1 mission (technically this is two satellites and not 1):
+
+\`\`\`{r echo = FALSE, out.width='40%'}
+
+xaringanExtra::embed_xaringan(
+
+url = "https://mhathorn.github.io/wk2_preso/#1",
+
+ratio = "16:9")
