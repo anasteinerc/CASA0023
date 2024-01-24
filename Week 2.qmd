@@ -4,12 +4,9 @@ title: "Week 2"
 
 \-\--
 
-Here is a short presentation discussing the Sentinel 1 mission (technically this is two satellites and not 1):
+I attach a presentation on Landsat satellite data:
 
-\`\`\`{r echo = FALSE, out.width='40%'}
+:::: xaringan
+source: C:/Users/USUARIO/Documents/UCL/Term 2/CASA0023/week 2/xaringan_presentation.Rmd
 
-xaringanExtra::embed_xaringan(
-
-url = "https://mhathorn.github.io/wk2_preso/#1",
-
-ratio = "16:9")
+Enjoy!
