@@ -1,16 +1,12 @@
-\-\--
+Week 1
 
-title: "Week 1"
-
-\-\--
-
-\## Introduction to Remote Sensing
+Introduction to Remote Sensing
 
 NASA defines remote sensing as "acquiring information from a distance". This information is acquired through sensors mounted on different platforms such as satellites, planes, drones, etc... Currently there are more than 150 satellites and more than 27,000 other devices orbiting the earth.
 
 There are various types of sensors and data sources, as well as applications. Data can come from Sentinel, LANDSAT or SAR satellites, and can be used to monitor various phenomenons such as land covered areas, urban or green space coverage, natural and climate phenomenons, and other atmospheric characteristics.
 
-\## Types of sensors
+Types of sensors
 
 There are two types of sensors:
 
@@ -18,7 +14,7 @@ Passive sensors use and detect energy that is available from the sun, but dont e
 
 Active sensors have proper sources of illumination and actively emit eletromagnetic waves. Some examples are X-rays and Lidar sensors. These are appropriate for difficult climatology and atmospheric conditions such as clouds and storms or air pollution, or to see during the night sky.
 
-\### Reflection and Resolutions
+Reflection and Resolutions
 
 Natural or unnatural phenomenon, such as clouds or volcanic ash, can interrupt or affect the reflection and dispersion of electromagnetic waves. The earth absorbs some energy, the other is randomly dispersed in the atmosphere. Different sensors (as mentioned above) are used to identify and capture different electromagnetic wave lengths and types.
 
@@ -32,7 +28,7 @@ Independent of the sensor used, 4 resolutions are needed:
 
 \*\*Radiometric:\*\* The range of reflectance values that are registered.
 
-\# Practical application and use
+Practical application and use
 
 Remote sensing, as it name implies, is used to monitor and register spatial data from a remote sensor such as satellites; it is a great compliment to more traditional and smaller-scale on-site monitors which only recover very localized information. I make an enphasis on "compliment" because it also has limitations that are worth mentioning, such as its cost, resolution limitations in some cases, and the need for a more robust data processing and analysis.
 
@@ -46,7 +42,7 @@ Sentinel Data - It comes from the European Earth observation satellite program, 
 
 Landsat Data - It comes from the NASA and the United States Geological Survey, specifically from satellites that have been orbiting for more than 50 years. These sensors capture different types of spectral data (visible, infrared and thermal, for example). This data is used for land cover monitoring, land use management and environmental monitoring. Due to its long-term archive, it's data has been very useful for studying environmental and urban developments and evolution.
 
-\## Personal reflection
+Personal reflection
 
 This is the first time that I work with this type of data. To be honest, it is quite an overwhelming process. It is very technical, I have had to review basic physics that I had not used in many years to remember the electromagnetic spectrum, the different types of wave lengths, colors, etc. It has also been a bit difficult to download data that works and then visualizing it on QGis or Rstudio, for me it is a work in progress as I learn how to be more efficient and accurate.
 
