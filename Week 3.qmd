@@ -1,7 +1,81 @@
-\-\--
+Week 3
 
-title: "Week 3"
+**Geometric and Atmospheric Correction:**
 
-\-\--
+-   Satellite images are assigned a coordinate reference system (CRS) in GIS.
 
-\##
+-   Image distortions can result from factors like off-nadir view angles, topography, wind (in aerial data collection), and Earth's rotation.
+
+-   Geometric correction aims to rectify these distortions for accurate spatial analysis.
+
+-   Ground Control Points (GPS) are used to match known points in the image with a reference dataset or map.
+
+-   Coordinates from GPS points are used to model geometric transformation coefficients.
+
+-   Various transformation algorithms are available for modeling the actual coordinates.
+
+-   The correction process involves both forward and backward mapping to ensure alignment.
+
+-   Root Mean Square Error (RMSE) is used to assess the accuracy of the correction.
+
+-   Lower RMSE values indicate a better fit of corrected data.
+
+-   Resampling methods like Nearest Neighbor, Linear, Cubic, and Cubic spline may be applied.
+
+-   Environmental factors, including atmospheric scattering and topographic attenuation, can affect remote sensing data.
+
+-   Atmospheric correction is essential when precise reflectance values are required for analysis.
+
+-   It involves normalizing intensities of different bands within an image or across multiple dates.
+
+-   Methods for atmospheric correction include relative, pseudo-invariant features (PIFs), and absolute correction.
+
+-   Absolute correction requires atmospheric measurements and radiative transfer models.
+
+-   Tools like ACORN, FLAASH, QUAC, and ATCOR are available for atmospheric correction.
+
+-   Radiometric calibration converts digital brightness values (DN) to scaled surface reflectance.
+
+-   Landsat data is often distributed as a surface reflectance product.
+
+-   Atmospheric correction aims to remove the effects of atmospheric scattering and absorption.
+
+-   The corrected data provides more accurate information for analysis and interpretation.
+
+**Practical Application and Use:**
+
+-   These correction techniques are crucial for obtaining accurate and reliable data in remote sensing.
+
+-   They ensure that imagery can be effectively utilized for various applications.
+
+-   Corrected data is essential for tasks like land cover classification and change detection.
+
+-   It enables the extraction of valuable information from remote sensing imagery.
+
+-   Practical applications include agriculture, urban planning, environmental monitoring, and disaster management.
+
+-   Atmospheric correction is particularly important for tasks involving precise reflectance values.
+
+-   It supports the assessment of biophysical parameters like temperature, leaf area index, and NDVI.
+
+-   Corrected data enhances the quality and usefulness of remote sensing products.
+
+-   They are integral in providing decision-makers with valuable insights for informed choices.
+
+**Personal Reflection:**
+
+-   The understanding and application of geometric and atmospheric correction are fundamental in the field of remote sensing.
+
+-   These correction processes ensure that the data accurately represents the Earth's surface.
+
+-   As technology advances, new tools and algorithms continue to improve the correction accuracy.
+
+-   Remote sensing offers a powerful means of gathering information about our planet.
+
+-   The application of these techniques to urban environments can have a profound impact on decision-making and urban planning.
+
+-   The combination of practical skills and theoretical knowledge in remote sensing is crucial for professionals in the field.
+
+-   I recognize the importance of continually learning and adapting to new advancements in remote sensing technology.
+
+-   Geometric and atmospheric correction lay the foundation for reliable and insightful remote sensing analysis.
