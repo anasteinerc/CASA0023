@@ -2,7 +2,7 @@ Week 4 - Public Policy Recommendations
 
 Case study: Bogota's Green Corridor Plan
 
--   Summary of city and PP:
+-   Context of Bogota
 
 Bogota is a city heavily criticized for its poor urban planning; it is one of the largest and densest capital cities in Latin America yet it suffers from having some of the worst public transportation systems and a lack of sustainable infrastructure **(cita).**
 
@@ -10,7 +10,9 @@ For many decades, Bogota was one of the most advanced and innovative cities, hom
 
 Because of this, it's inhabitants are exposed to heavily contaminated air, to horrible traffic, to an expensive transportation system that does not support the population density of the city, and to great disparities regarding access to sustainable infrastructure such as as green housing, bicycle routs, etc... **(cita).** It is one of few cities with more than 7 million citizens that does NOT have a metro system. **(cita)**, making it very dependent on cars. There have been many proposals for urban "retenes" and carpooling obligations, which have all been debated and blocked by congress.
 
-One of the newest project ideas is the Septimva Verde Project, which proposes to build a green corridor along one of the largest and busiest avenues in the city; this project includes building pedestrian and cycle friendly routes and the delimitation of green spaces and parks, ultimately reducing car lanes and hopefully encouraging for more non-motorized transportation. The project's goal is also to promote more sustainable urban development plans and improve air quality. **Mencionar que es un proyecto controversial, que sigue en debate.**
+-   Septima Verde
+
+One of the newest project ideas is the Septima Verde Project, which proposes to build a green corridor along one of the largest and busiest avenues in the city; this project includes building pedestrian and cycle friendly routes and the delimitation of green spaces and parks, ultimately reducing car lanes and hopefully encouraging for more non-motorized transportation. The project's goal is also to promote more sustainable urban development plans and improve air quality.
 
 Objectives:
 
@@ -36,87 +38,31 @@ Key Components:
 
 6.  Street Furniture: Installation of street furniture, benches, and public art to enhance the overall experience of the corridors.
 
+Within the project, it is also contemplated to construct new routs for Transmilenio (Bogota's bus system) around this corridor, giving people more incentives to not use their car. This last component of the project has generated much public and political debate. The Mayoress of Bogota had made a big point, during her campaign, to not building public transportation infrastructure during this avenue, and this project would be a direct contradiction to this, the main opposers of the project are ironically her election base.
+
+This makes for a very interesting political setting. The creation of the green corridor, as well as the public transportation routes, would really help some of the most deprived populations, as it would give them access to better transportation, to more green areas, and in general would hopefully decongest the traffic; but it has been made clear that it would affect negatively the richer citizens who have benefited from this highway with no public transportation and just private cars. This project has become a clear example of how difficult it is to propose and implement a public policy or a public project that keeps everyone content.
+
+Additionally, this is a hefty project budgeted at 2.5 billion COP (aprox 640 million USD).
+
 -   Applications of remote sensing:
 
-1.  Vegetation Monitoring:
+I. During the planning and design of this project:
 
-    -   Satellite Data: Optical satellite imagery, such as data from the Landsat or Sentinel satellites, can be used. These satellites capture visible and near-infrared wavelengths, which are valuable for assessing vegetation health.
+\- Land Use Data (Sentinel-2, Landsat 8): To identify existing use patterns, distinguishing between green spaces, industrial infrastructure, housing, roads, etc. This was critical in defining the green area baseline to which to aggregate too, as well as define the businesses and residential neighborhoods that would be affected.
 
-    -   Data Collection: Satellite sensors capture images of Carrera Séptima at regular intervals. The data is collected through passive optical sensors.
+\- Air Quality Data (Sentinel-5p): To monitor the baseline of air pollution in the designated areas to define the benchmarks.
 
-    -   Analysis: Remote sensing software can be used to calculate vegetation indices (e.g., Normalized Difference Vegetation Index - NDVI) from satellite imagery. Changes in NDVI over time indicate variations in vegetation cover.
+\- Vegetation and Land Cover Monitoring (Sentinel-2, Landsat 8): To characterize the current vegetation health status and biodiversity, and to better define what type of green areas to add.
 
-2.  Urban Heat Island Effect:
+II\. During the monitoring and compliance of the project:
 
-    -   Satellite Data: Thermal infrared imagery from satellites like Landsat, Sentinel-2, or specialized thermal sensors provides temperature data.
+\- Urban Heat Monitoring (Thermal imagery): To measure the cooling impact of the green spaces and possible reduced traffic.
 
-    -   Data Collection: Thermal sensors measure the emitted heat energy from surfaces, including roads and buildings.
+\- Air Quality Assessment (Sentinel-5p): To measure improvements in air quality.
 
-    -   Analysis: Thermal data can be used to create temperature maps, identifying areas with elevated temperatures. Comparing pre-project and post-project temperature maps helps assess the cooling effect of green infrastructure.
+\- Traffic Analysis (Satellite traffic data): To identify changes in flows and mobility patterns, to measure traffic of pedestrian and of vehicle paths, to identify consequences over traffic in surrounding highways.
 
-3.  Air Quality Assessment:
-
-    -   Satellite Data: Satellites equipped with air quality monitoring sensors, such as the Tropospheric Monitoring Instrument (TROPOMI), provide data on pollutants like nitrogen dioxide (NO2).
-
-    -   Data Collection: These sensors measure atmospheric composition and pollutant concentrations.
-
-    -   Analysis: Data from air quality sensors can be processed to create pollutant concentration maps. Comparing these maps before and after the project helps assess changes in air quality.
-
-4.  Traffic and Mobility Analysis:
-
-    -   Satellite Data: Traffic monitoring data can be collected through optical and radar sensors on satellites or through specialized traffic monitoring satellites.
-
-    -   Data Collection: These sensors capture images and monitor traffic patterns by tracking vehicle movement.
-
-    -   Analysis: Software can process satellite-derived traffic data to analyze traffic flow, congestion, and changes in mobility along Carrera Séptima.
-
-5.  Pedestrian and Cyclist Counting:
-
-    -   Satellite Data: Remote sensing cameras and sensors deployed along the corridor can capture images and collect data on pedestrian and cyclist movements.
-
-    -   Data Collection: These sensors record the presence and movement of pedestrians and cyclists.
-
-    -   Analysis: The data collected from sensors can be used to count the number of pedestrians and cyclists using Carrera Séptima, helping assess the impact of the project on non-motorized transportation.
-
-6.  Noise Pollution Measurement:
-
-    -   Satellite Data: Noise pollution data can be collected through specialized noise monitoring sensors on satellites.
-
-    -   Data Collection: These sensors measure noise levels in decibels (dB) from space.
-
-    -   Analysis: By comparing noise levels before and after the project, the impact of green infrastructure on noise reduction can be evaluated.
-
-7.  Land Use and Zoning:
-
-    -   Satellite Data: Optical and radar satellite imagery can be used to monitor land use and zoning compliance.
-
-    -   Data Collection: Imagery captures land use changes and construction activities.
-
-    -   Analysis: Remote sensing analysts can identify changes in land use, adherence to zoning regulations, and the conversion of road space into green and public areas.
-
-8.  Infrastructure Maintenance:
-
-    -   Satellite Data: High-resolution optical imagery from satellites like WorldView or GeoEye can be used for infrastructure monitoring.
-
-    -   Data Collection: Satellite sensors capture detailed images of Carrera Séptima and its infrastructure.
-
-    -   Analysis: Remote sensing analysts can assess the condition of pedestrian infrastructure (e.g., sidewalks, benches, lighting) by analyzing imagery for signs of wear, damage, or maintenance needs.
-
-9.  Urban Design Compliance:
-
-    -   Satellite Data: High-resolution optical and multispectral satellite imagery capture urban design elements.
-
-    -   Data Collection: Imagery is collected by satellites with sub-meter or even sub-decimeter resolution.
-
-    -   Analysis: Remote sensing analysts can assess the placement and compliance of urban design elements, including street furniture, landscaping, and public art, by analyzing the imagery.
-
-10. Public Space Utilization:
-
-    -   Satellite Data: High-resolution optical imagery captures the utilization of public spaces.
-
-    -   Data Collection: Imagery captures the presence and activities of people within public spaces.
-
-    -   Analysis: By analyzing the imagery, remote sensing analysts can measure how public spaces created by the project are being utilized, including pedestrian traffic and gatherings.
+All of this will be complimented with robust demographic and socio economic data, to measure improvements over economy, income and mobility in the affected populations and sectors; as well as with data from traffic police or public transportation companies regarding the hopeful increase in people using public transportation and a reduction in car use.
 
 -   Personal reflections:
 
