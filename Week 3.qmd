@@ -1,6 +1,6 @@
-Week 3
+# Week 3 - Geometric and Atmospheric Correction
 
-**Geometric and Atmospheric Correction:**
+## **What is it?**
 
 -   Satellite images are assigned a coordinate reference system (CRS) in GIS.
 
@@ -42,7 +42,7 @@ Week 3
 
 -   The corrected data provides more accurate information for analysis and interpretation.
 
-**Practical Application and Use:**
+## **Practical Application and Use:**
 
 -   These correction techniques are crucial for obtaining accurate and reliable data in remote sensing.
 
@@ -62,7 +62,7 @@ Week 3
 
 -   They are integral in providing decision-makers with valuable insights for informed choices.
 
-**Personal Reflection:**
+## **Personal Reflection:**
 
 -   The understanding and application of geometric and atmospheric correction are fundamental in the field of remote sensing.
 
