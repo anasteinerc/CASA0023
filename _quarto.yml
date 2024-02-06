@@ -4,15 +4,10 @@ project:
 book:
   title: "CASA0023 - Personal Diary"
   chapters:
-  - title: "Week 1"
-    file: Week_1.qmd
-  - title: "Week 2"
-    file: Week_2.qmd
-  - title: "Week 3"
-    file: Week_3.qmd
-  - title: "Week 4"
-    file: Week_4.qmd
-  - title: "Week 5"
-    file: Week_5.qmd
-  - title: "References"
-    file: references.qmd
+    - index.qmd
+    - Week 1.qmd
+    - Week 2.qmd
+    - Week 3.qmd
+    - Week 4.qmd
+    - Week 5.qmd
+    - references.qmd

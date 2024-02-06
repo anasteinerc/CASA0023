@@ -6,9 +6,9 @@ NASA defines remote sensing as "acquiring information from a distance". This inf
 
 There are various types of sensors and data sources, as well as applications. Data can come from Sentinel, LANDSAT or SAR satellites, and can be used to monitor various phenomenons such as land covered areas, urban or green space coverage, natural and climate phenomenons, and other atmospheric characteristics.
 
-![](.quarto/remote%20sensing.jpg)
+![Remote Sensing](remote%20sensing.jpg)
 
-<https://gisgeography.com/remote-sensing-earth-observation-guide/>
+[Remote Sensing Earth Observation Guide](https://gisgeography.com/remote-sensing-earth-observation-guide/)
 
 ## Types of sensors
 
