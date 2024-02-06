@@ -1,8 +1,8 @@
-Week 4 - Public Policy Recommendations
+# Week 4 - Public Policy Case Study
 
-Case study: Bogota's Green Corridor Plan
+## Bogota's Green Corridor Plan - Septima Verde
 
--   Context of Bogota
+### Context of Bogota
 
 Bogota is a city heavily criticized for its poor urban planning; it is one of the largest and densest capital cities in Latin America yet it suffers from having some of the worst public transportation systems and a lack of sustainable infrastructure **(cita).**
 
@@ -10,9 +10,13 @@ For many decades, Bogota was one of the most advanced and innovative cities, hom
 
 Because of this, it's inhabitants are exposed to heavily contaminated air, to horrible traffic, to an expensive transportation system that does not support the population density of the city, and to great disparities regarding access to sustainable infrastructure such as as green housing, bicycle routs, etc... **(cita).** It is one of few cities with more than 7 million citizens that does NOT have a metro system. **(cita)**, making it very dependent on cars. There have been many proposals for urban "retenes" and carpooling obligations, which have all been debated and blocked by congress.
 
--   Septima Verde
+### Septima Verde
 
 One of the newest project ideas is the Septima Verde Project, which proposes to build a green corridor along one of the largest and busiest avenues in the city; this project includes building pedestrian and cycle friendly routes and the delimitation of green spaces and parks, ultimately reducing car lanes and hopefully encouraging for more non-motorized transportation. The project's goal is also to promote more sustainable urban development plans and improve air quality.
+
+This project will use the current sidewalk and 4 vehicule lanes (half of the highway) as well as various unused lots and dwellings.
+
+![](.quarto/CorredorVerde3-1.webp)
 
 Objectives:
 
@@ -40,11 +44,11 @@ Key Components:
 
 Within the project, it is also contemplated to construct new routs for Transmilenio (Bogota's bus system) around this corridor, giving people more incentives to not use their car. This last component of the project has generated much public and political debate. The Mayoress of Bogota had made a big point, during her campaign, to not building public transportation infrastructure during this avenue, and this project would be a direct contradiction to this, the main opposers of the project are ironically her election base.
 
-This makes for a very interesting political setting. The creation of the green corridor, as well as the public transportation routes, would really help some of the most deprived populations, as it would give them access to better transportation, to more green areas, and in general would hopefully decongest the traffic; but it has been made clear that it would affect negatively the richer citizens who have benefited from this highway with no public transportation and just private cars. This project has become a clear example of how difficult it is to propose and implement a public policy or a public project that keeps everyone content.
+This makes for a very interesting political setting. The creation of the green corridor, as well as the public transportation routes, would really help some of the most deprived populations, as it would give them access to better transportation, to more green areas, and in general would hopefully decongest the traffic; but it has been made clear that it would affect negatively the richer citizens who have benefited from this highway with no public transportation and just private cars. This project has become a clear example of how difficult it is to propose and implement a public policy or a public project that keeps everyone content. Additionally, many opposers also suggest better ways to use the unused lots such as building schools or community centers.
 
 Additionally, this is a hefty project budgeted at 2.5 billion COP (aprox 640 million USD).
 
--   Applications of remote sensing:
+### Applications of remote sensing:
 
 I. During the planning and design of this project:
 
@@ -64,7 +68,7 @@ II\. During the monitoring and compliance of the project:
 
 All of this will be complimented with robust demographic and socio economic data, to measure improvements over economy, income and mobility in the affected populations and sectors; as well as with data from traffic police or public transportation companies regarding the hopeful increase in people using public transportation and a reduction in car use.
 
--   Personal reflections:
+### Personal reflections:
 
 As a Colombian and Bogotá-raised anthropologist and geographer deeply passionate about my city's vibrant culture and potential for sustainable development, my journey has been both inspiring and challenging. Bogotá, with its rich history and diverse communities, has always held a special place in my heart. Witnessing the city's progress towards sustainability has been a source of hope and pride, as initiatives like "Septima Verde" have aimed to transform our urban landscape into a greener, more pedestrian-friendly haven.
 
@@ -72,10 +76,12 @@ However, my passion is tempered by concerns and a critical perspective. The spec
 
 Navigating the delicate balance between love for my city and the need for reform has been a constant theme in my personal and professional life. Despite the challenges, I remain dedicated to contributing to the sustainable development of Bogotá and fostering a brighter future for all its inhabitants, driven by my unwavering belief in the potential of our beautiful city.
 
--   Bibliography:
+### Bibliography:
 
-    https://elpais.com/america-colombia/2023-10-26/el-corredor-verde-de-la-septima-proyecto-insignia-de-claudia-lopez-naufraga-en-un-juzgado.html
+-   https://elpais.com/america-colombia/2023-10-26/el-corredor-verde-de-la-septima-proyecto-insignia-de-claudia-lopez-naufraga-en-un-juzgado.html
 
-    https://www.portafolio.co/economia/corredor-verde-por-la-septima-se-mantiene-en-que-consiste-el-proyecto-570477
+-   https://www.portafolio.co/economia/corredor-verde-por-la-septima-se-mantiene-en-que-consiste-el-proyecto-570477
 
-    https://observatorio.dadep.gov.co/noticias/plan-para-transformar-la-carrera-7ma-en-bogota
+-   https://observatorio.dadep.gov.co/noticias/plan-para-transformar-la-carrera-7ma-en-bogota
+
+-   https://www.lasillavacia.com/red-de-expertos/red-cachaca/repensando-el-corredor-verde-de-la-septima-estrategias-temporales-para-predios-en-espera/

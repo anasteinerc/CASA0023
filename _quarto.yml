@@ -10,6 +10,7 @@ book:
     - week 1.qmd
     - week 2.qmd
     - week 3.qmd
+    - Week 4.qmd
     - references.qmd
 
 bibliography: references.bib
