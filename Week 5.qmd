@@ -1,12 +1,24 @@
-# Week 5 - 
+# Week 5 - Temperature and policy
 
-## **What is it?**
+## **Urban temperature problematic**
 
+Urban areas contain Urban Heat Islands, which have comparatively higher atmospheric and surface temperatures.This is due to concrete and paved roads (dark surfaces that retain heat), to all industrial processes, lack of green areas, and other urban contaminants. This urban heating has drastic consequences over humans and natural environments:
+- Heat waves are the deadliest urban phenomenon in urban cities.
+- The increase in urban heat has direct implications over the general heat of surrounding natural hubs, which start to degrade.
 
+This is becoming not only a dangerous phenomenon but also expensive, as cities are investing more and more on greener energies, in more green areas, in changing economic and social behaviours, and in general being more heat and energy efficient.
 
-## **Practical Application and Use:**
+## **Policies**
 
+### **Global level**
+- New Urban Agenda
+- Sustainable Development Goals
+- Beat The Heat Handbook
 
+### **City level - Medellin Case Study**
+- New Urban Agenda
+- Sustainable Development Goals
+- Beat The Heat Handbook
 
 ## **Personal Reflection:**
 
