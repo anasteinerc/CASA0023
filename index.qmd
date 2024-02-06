@@ -2,7 +2,7 @@
 
 Hello to all. I am Ana :)
 
-![Ana](foto ana.jpg)
+(foto%20ana.jpg)
 
 First of all, I am a proud Colombian woman, very interested in understanding socio-cultural, economic and environmental behaviors around me, and commited to improving livelyhoods and conditions for people and communities around the world.
 

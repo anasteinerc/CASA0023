@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>CASA0023 - Personal Diary – week-3</title>
+<title>CASA0023 - Personal Diary - 4&nbsp; Week 3 - Geometric and Atmospheric Correction</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,7 +31,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./Week 4.html" rel="next">
-<link href="./week 2.html" rel="prev">
+<link href="./Week 2.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -64,7 +64,7 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-sidebar floating fullcontent">
+<body class="nav-sidebar floating">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -73,7 +73,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week 3.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">week 3.html</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Week 3.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Week 3 - Geometric and Atmospheric Correction</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -106,26 +106,32 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./week 1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">week 1.html</span></span></a>
+  <a href="./Week 1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Week 1 - Introduction to Remote Sensing</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./week 2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">week 2.html</span></span></a>
+  <a href="./Week 2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Week 2 - Landsat Satellites</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./week 3.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">week 3.html</span></span></a>
+  <a href="./Week 3.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Week 3 - Geometric and Atmospheric Correction</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Week 4.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week 4.html</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week 4 - Public Policy Case Study</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Week 5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Week 5.html</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -139,61 +145,53 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#what-is-it" id="toc-what-is-it" class="nav-link active" data-scroll-target="#what-is-it"><span class="header-section-number">4.1</span> <strong>What is it?</strong></a></li>
+  <li><a href="#practical-application-and-use" id="toc-practical-application-and-use" class="nav-link" data-scroll-target="#practical-application-and-use"><span class="header-section-number">4.2</span> <strong>Practical Application and Use:</strong></a></li>
+  <li><a href="#personal-reflection" id="toc-personal-reflection" class="nav-link" data-scroll-target="#personal-reflection"><span class="header-section-number">4.3</span> <strong>Personal Reflection:</strong></a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Week 3 - Geometric and Atmospheric Correction</span></h1>
+</div>
 
 
-<p>Week 3</p>
-<p><strong>Geometric and Atmospheric Correction:</strong></p>
-<ul>
-<li><p>Satellite images are assigned a coordinate reference system (CRS) in GIS.</p></li>
-<li><p>Image distortions can result from factors like off-nadir view angles, topography, wind (in aerial data collection), and Earth’s rotation.</p></li>
-<li><p>Geometric correction aims to rectify these distortions for accurate spatial analysis.</p></li>
-<li><p>Ground Control Points (GPS) are used to match known points in the image with a reference dataset or map.</p></li>
-<li><p>Coordinates from GPS points are used to model geometric transformation coefficients.</p></li>
-<li><p>Various transformation algorithms are available for modeling the actual coordinates.</p></li>
-<li><p>The correction process involves both forward and backward mapping to ensure alignment.</p></li>
-<li><p>Root Mean Square Error (RMSE) is used to assess the accuracy of the correction.</p></li>
-<li><p>Lower RMSE values indicate a better fit of corrected data.</p></li>
-<li><p>Resampling methods like Nearest Neighbor, Linear, Cubic, and Cubic spline may be applied.</p></li>
-<li><p>Environmental factors, including atmospheric scattering and topographic attenuation, can affect remote sensing data.</p></li>
-<li><p>Atmospheric correction is essential when precise reflectance values are required for analysis.</p></li>
-<li><p>It involves normalizing intensities of different bands within an image or across multiple dates.</p></li>
-<li><p>Methods for atmospheric correction include relative, pseudo-invariant features (PIFs), and absolute correction.</p></li>
-<li><p>Absolute correction requires atmospheric measurements and radiative transfer models.</p></li>
-<li><p>Tools like ACORN, FLAASH, QUAC, and ATCOR are available for atmospheric correction.</p></li>
-<li><p>Radiometric calibration converts digital brightness values (DN) to scaled surface reflectance.</p></li>
-<li><p>Landsat data is often distributed as a surface reflectance product.</p></li>
-<li><p>Atmospheric correction aims to remove the effects of atmospheric scattering and absorption.</p></li>
-<li><p>The corrected data provides more accurate information for analysis and interpretation.</p></li>
-</ul>
-<p><strong>Practical Application and Use:</strong></p>
-<ul>
-<li><p>These correction techniques are crucial for obtaining accurate and reliable data in remote sensing.</p></li>
-<li><p>They ensure that imagery can be effectively utilized for various applications.</p></li>
-<li><p>Corrected data is essential for tasks like land cover classification and change detection.</p></li>
-<li><p>It enables the extraction of valuable information from remote sensing imagery.</p></li>
-<li><p>Practical applications include agriculture, urban planning, environmental monitoring, and disaster management.</p></li>
-<li><p>Atmospheric correction is particularly important for tasks involving precise reflectance values.</p></li>
-<li><p>It supports the assessment of biophysical parameters like temperature, leaf area index, and NDVI.</p></li>
-<li><p>Corrected data enhances the quality and usefulness of remote sensing products.</p></li>
-<li><p>They are integral in providing decision-makers with valuable insights for informed choices.</p></li>
-</ul>
-<p><strong>Personal Reflection:</strong></p>
-<ul>
-<li><p>The understanding and application of geometric and atmospheric correction are fundamental in the field of remote sensing.</p></li>
-<li><p>These correction processes ensure that the data accurately represents the Earth’s surface.</p></li>
-<li><p>As technology advances, new tools and algorithms continue to improve the correction accuracy.</p></li>
-<li><p>Remote sensing offers a powerful means of gathering information about our planet.</p></li>
-<li><p>The application of these techniques to urban environments can have a profound impact on decision-making and urban planning.</p></li>
-<li><p>The combination of practical skills and theoretical knowledge in remote sensing is crucial for professionals in the field.</p></li>
-<li><p>I recognize the importance of continually learning and adapting to new advancements in remote sensing technology.</p></li>
-<li><p>Geometric and atmospheric correction lay the foundation for reliable and insightful remote sensing analysis.</p></li>
-</ul>
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="what-is-it" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="what-is-it"><span class="header-section-number">4.1</span> <strong>What is it?</strong></h2>
+<p>Satellite images are crucial sources of geospatial information, but they are not immune to distortions that can impact the accuracy of spatial analysis. These distortions may arise from various factors, including off-nadir view angles, variations in topography, wind effects (particularly in aerial data collection), and even the Earth’s rotation. To address these distortions and ensure the precise alignment of satellite imagery with geographic data, a process known as geometric correction is employed. Geometric correction plays a pivotal role in rectifying these distortions, making it an indispensable step in the preparation of satellite imagery for accurate spatial analysis.</p>
+<p>Geometric correction is a meticulous process that involves several key steps. Ground Control Points (GCPs), often established through Global Positioning System (GPS) measurements, serve as reference markers. These GCPs are used to establish a mathematical model for geometric transformation, enabling the adjustment of the image’s coordinates. Various transformation algorithms are available to model the actual coordinates accurately. The correction process encompasses both forward and backward mapping to ensure precise alignment. Additionally, the accuracy of the geometric correction is assessed using metrics such as Root Mean Square Error (RMSE). Lower RMSE values indicate a better fit of the corrected data to the reference dataset. Overall, geometric correction is fundamental in enhancing the accuracy and usability of satellite imagery for a wide range of applications, from environmental monitoring to urban planning.</p>
+</section>
+<section id="practical-application-and-use" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="practical-application-and-use"><span class="header-section-number">4.2</span> <strong>Practical Application and Use:</strong></h2>
+<p>Correction techniques play a pivotal role in the realm of remote sensing, underpinning the foundation of accurate and reliable data acquisition. Their importance cannot be overstated, as they serve as the linchpin for ensuring that remotely sensed imagery can be effectively harnessed across a multitude of applications. The process of correction not only rectifies distortions but also paves the way for the extraction of valuable information from remote sensing data. This corrected data is indispensable for critical tasks such as land cover classification, change detection, and the assessment of biophysical parameters like temperature, leaf area index, and NDVI. These correction techniques find practical applications in diverse fields, including agriculture, urban planning, environmental monitoring, and disaster management. Ultimately, they elevate the quality and utility of remote sensing products, equipping decision-makers with invaluable insights for making informed choices and driving evidence-based decisions.</p>
+</section>
+<section id="personal-reflection" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="personal-reflection"><span class="header-section-number">4.3</span> <strong>Personal Reflection:</strong></h2>
+<p>In the world of remote sensing, understanding and using geometric and atmospheric correction techniques is a big deal, it is one of the most important things. These techniques make sure that the pictures and data we get from satellites will really show what’s happening on Earth. As technology keeps getting better, we’ve got more robust tools and tricks that make these corrections even more precise and easier to make.</p>
+<p>As an anthropologist, working in environmental conservation and rural development, and now diving into data science, I am getting very inspired by all of this new information regarding remote sensing. Remote sensing will let me gather lots of info about our planet and using these correction techniques, it will be easier to make smart decisions for the environment and how rural areas develop.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -431,13 +429,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./week 2.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">week 2.html</span></span>
+      <a href="./Week 2.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Week 2 - Landsat Satellites</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="./Week 4.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week 4.html</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week 4 - Public Policy Case Study</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

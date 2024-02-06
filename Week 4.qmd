@@ -16,7 +16,8 @@ One of the newest project ideas is the Septima Verde Project, which proposes to 
 
 This project will use the current sidewalk and 4 vehicule lanes (half of the highway) as well as various unused lots and dwellings.
 
-![](.quarto/CorredorVerde3-1.webp)
+![Corredor Verde Project](Corredor Verde.webp)
+*Image: The proposed Corredor Verde project.*
 
 Objectives:
 
