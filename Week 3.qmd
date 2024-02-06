@@ -15,4 +15,3 @@ Correction techniques play a pivotal role in the realm of remote sensing, underp
 In the world of remote sensing, understanding and using geometric and atmospheric correction techniques is a big deal, it is one of the most important things. These techniques make sure that the pictures and data we get from satellites will really show what's happening on Earth. As technology keeps getting better, we've got more robust tools and tricks that make these corrections even more precise and easier to make.
 
 As an anthropologist, working in environmental conservation and rural development, and now diving into data science, I am getting very inspired by all of this new information regarding remote sensing. Remote sensing will let me gather lots of info about our planet and using these correction techniques, it will be easier to make smart decisions for the environment and how rural areas develop.
-
