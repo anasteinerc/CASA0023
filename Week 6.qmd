@@ -1,0 +1,18 @@
+# Week 6 - Google Earth Engine
+
+**Overview**
+The text covers a comprehensive exploration of Google Earth Engine (GEE), a cloud-based platform that enables planetary-scale environmental data analysis. It details the setup and practical application of GEE, focusing on how it facilitates the processing of massive environmental datasets, the introduction to GEE terminology, the execution of code on the platform, and specific functionalities such as data manipulation, machine learning, and image processing techniques. Additionally, it touches on the practical aspects of using GEE for environmental monitoring and analysis, highlighting its impact on speeding up data processing tasks compared to traditional methods.
+
+## Explanation
+GEE functions by storing environmental datasets on cloud servers and processing this data server-side based on code written by users. It handles different data types, including raster (Image) and vector (Feature) data, and supports operations like image collection manipulation, regression analysis, and machine learning. GEE's architecture is designed around client-server interactions, with client-side code running in the user's browser and server-side operations executed on Google's servers.
+
+## Practical Implementation
+The practical implementation of GEE involves setting up the environment, understanding GEE-specific terms, and writing JavaScript code for data analysis. Users can manipulate data through operations like filtering image collections, applying regression analysis to detect changes over time, and employing machine learning for classification tasks. The platform also supports the visualization of processed data, enabling users to generate interactive maps and applications.
+
+## Examples
+- Data Manipulation: Loading Landsat surface reflectance data, filtering by date and cloud cover, and visualizing it on the map.
+- Machine Learning: Introduction to supervised and unsupervised classification techniques within GEE.
+- Image Processing: Techniques like applying scale factors, mosaicing images to address differences between tiles, and performing principal component analysis (PCA) to reduce data dimensionality.
+
+## Personal Reflection
+The transition to Google Earth Engine has significantly streamlined the remote sensing workflow, eliminating the need for manual image downloading and processing, thereby saving considerable time and computational resources. The platform's ability to handle massive datasets rapidly and its extensive data catalog have opened up new possibilities for environmental monitoring and analysis. While the reliance on JavaScript might initially seem daunting, the platform's extensive documentation and community support make it accessible. The potential uncertainty about Google's long-term commitment to providing GEE as a free service remains a concern, but for now, it represents a valuable tool for environmental scientists and researchers.
