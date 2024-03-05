@@ -1,0 +1,50 @@
+
+# Week 6 - Google Earth Engine
+
+**Overview:** This week introduces Google Earth Engine (GEE), a transformative cloud-based platform designed for environmental data analysis on a planetary scale. GEE revolutionizes how we process and analyze large environmental datasets by providing powerful server-side processing capabilities.
+
+## Introduction to GEE
+
+GEE allows users to access a vast repository of satellite imagery and geospatial datasets, enabling complex analyses without the need for extensive local computing resources. Its server-side processing model means that users can run analyses on Google's servers, significantly reducing the time and computational power required.
+
+## Key Concepts and Terms
+
+- **Image:** Represents raster data, consisting of one or more bands that contain pixel values.
+- **Feature:** Refers to vector data, which includes geometric shapes and attributes describing those shapes.
+- **ImageCollection:** A collection of images, often used to represent time-series data or multiple spatial layers.
+
+## Example Code Snippet
+
+Below is a simplified example of how to access and visualize satellite imagery using GEE. Replace this with specific code relevant to your analysis.
+
+```javascript
+// Example code for accessing a satellite image in GEE
+var image = ee.Image('LANDSAT/LC08/C01/T1/LC08_123032_20140515');
+Map.addLayer(image, {bands: ['B4', 'B3', 'B2'], max: 0.3}, 'Landsat image');
+```
+
+## Reflection
+
+Exploring GEE's capabilities underscores the importance of cloud computing in environmental science, enabling researchers to tackle global challenges with unprecedented data access and processing power. The platform's ability to handle vast datasets offers new opportunities for understanding and addressing environmental issues.
+
+## Multimedia Insertion
+
+To support the discussion, consider including screenshots or diagrams that illustrate GEE's interface or examples of analyses conducted using GEE. For example:
+
+```markdown
+![GEE Analysis Example](path_to_image)
+```
+
+Replace `path_to_image` with the actual path or URL to your image.
+
+## Citations
+
+Incorporate citations to studies, tutorials, or official documentation that provide further insights into GEE's applications and capabilities:
+
+```markdown
+For comprehensive guides on using GEE, see [^1].
+
+[^1]: Author(s), "Google Earth Engine Guide," Publication/Website, Year.
+```
+
+Replace the placeholder citation with actual details from your `references.bib` file.

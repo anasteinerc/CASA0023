@@ -1,8 +1,12 @@
 # Week 5 - Temperature and policy
 
-## **Urban temperature problematic**
+**Overview:** This week addresses the critical issue of Urban Heat Islands (UHIs) and the interplay between urban temperature dynamics and public policy. UHIs result in higher urban temperatures compared to surrounding areas, posing significant challenges to urban living and environmental sustainability.
 
-Urban areas contain Urban Heat Islands, which have comparatively higher atmospheric and surface temperatures.This is due to concrete and paved roads (dark surfaces that retain heat), to all industrial processes, lack of green areas, and other urban contaminants. This urban heating has drastic consequences over humans and natural environments:
+## Urban Heat Island Effect
+
+Urban areas experience elevated temperatures due to factors such as heat-retaining surfaces (concrete and paved roads), industrial activities, scarce green spaces, and pollutants. This phenomenon exacerbates heat waves, impacts human health, and increases energy demand for cooling.
+
+This urban heating has drastic consequences over humans and natural environments:
 - Heat waves are the deadliest urban phenomenon in urban cities.
 - The increase in urban heat has direct implications over the general heat of surrounding natural hubs, which start to degrade.
 
@@ -10,16 +14,18 @@ This is becoming not only a dangerous phenomenon but also expensive, as cities a
 
 ## **Policies**
 
+Addressing UHIs requires comprehensive policy strategies, including the promotion of green infrastructure, reflective building materials, and enhanced urban planning to increase ventilation and shade. These measures can mitigate the effects of UHIs, improving urban resilience and sustainability.
+
 ### **Global level**
 - New Urban Agenda
 - Sustainable Development Goals
 - Beat The Heat Handbook
 
-### **City level - Medellin Case Study**
-- New Urban Agenda
-- Sustainable Development Goals
-- Beat The Heat Handbook
+### **City level - Medellin's Corredor Verde**
+- Successfully improved air quality and urban biodiversity through the expansion of green spaces.​
+- Created accessible public green areas that promote outdoor activities and social interaction.​
+- Encouraged non-motorized transportation with integrated bicycle lanes and pedestrian paths, reducing car dependency.
 
 ## **Personal Reflection:**
 
-
+The study of UHIs underscores the importance of integrating environmental considerations into urban planning and policy. Reflecting on potential solutions highlights the need for innovative approaches to urban design and infrastructure development, aiming to reduce the heat island effect and its associated risks.

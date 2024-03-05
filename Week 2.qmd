@@ -1,5 +1,12 @@
-# Week 2 - Landsat Satellites
 
-I share with you this presentation I made on Landsat satellites: their great importance to modern science, the methodologies and technology they use, their different applications, and improvements over time:
+# Week 2 - Landsat Satellites and Their Importance
 
-[Click here to view the presentation](https://github.com/anasteinerc/xaringan-presentation.git)
+This week, we focused on the crucial role of Landsat satellites in modern environmental and urban monitoring and analysis. In the following presentation, you can read the insights into their methodologies, technology, applications, and evolutionary improvements over time.
+
+```{r echo=FALSE, out.width='100%'}
+
+xaringanExtra::embed_xaringan(
+  url = "Revised_Xaringan_Presentation.Rmd",
+  ratio = "16:9"
+)
+```
