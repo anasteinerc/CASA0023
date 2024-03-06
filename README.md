@@ -1,4 +1,4 @@
-# CASA0023 - Personal Diary
+# CASA0023 Personal Diary
 
 Repo for CASA0023 - Remotely Sensing Cities and Environments.
 
