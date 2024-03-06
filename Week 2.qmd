@@ -6,7 +6,7 @@ This week, we focused on the crucial role of Landsat satellites in modern enviro
 ```{r echo=FALSE, out.width='100%'}
 
 xaringanExtra::embed_xaringan(
-  url = "Revised_Xaringan_Presentation.Rmd",
+  url = "Revised_Xaringan_Presentation.html",
   ratio = "16:9"
 )
 ```
