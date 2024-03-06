@@ -2,4 +2,4 @@
 
 Repo for CASA0023 - Remotely Sensing Cities and Environments.
 
-This is my personal diary registring the technical and practical lessons I obtained throughout this course.
+This is my personal diary registering the technical and practical lessons I obtained throughout this course.
