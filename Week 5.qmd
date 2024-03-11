@@ -1,31 +1,76 @@
 # Week 5 - Temperature and policy
 
-**Overview:** This week addresses the critical issue of Urban Heat Islands (UHIs) and the interplay between urban temperature dynamics and public policy. UHIs result in higher urban temperatures compared to surrounding areas, posing significant challenges to urban living and environmental sustainability.
+**Overview:** 
+A critical issue in urban development is that of Urban Heat Islands (UHIs) and the interplay between urban temperature dynamics and public policy. UHIs result in higher urban temperatures compared to surrounding areas, posing significant challenges to urban living and environmental sustainability.
+
+A quick example of an Urban Heat Island is New York City, a heavily built-up area with much higher temperatures to its surrounding rural areas. According to the United State's Environmental Protection Agency, NYC's annual temperature is up to 3 Celsius degrees warmer than it's surrounding areas.
+
+![](nyc.jpg) 
 
 ## Urban Heat Island Effect
 
-Urban areas experience elevated temperatures due to factors such as heat-retaining surfaces (concrete and paved roads), industrial activities, scarce green spaces, and pollutants. This phenomenon exacerbates heat waves, impacts human health, and increases energy demand for cooling.
+Urban areas experience elevated temperatures due to factors such as heat-retaining surfaces (concrete and paved roads), industrial activities, scarce green spaces, and pollutants. This phenomenon exacerbates heat waves, impacts human health, and increases energy demand for cooling. This becomes into a vicious never-ending cycle.
 
 This urban heating has drastic consequences over humans and natural environments:
 - Heat waves are the deadliest urban phenomenon in urban cities.
 - The increase in urban heat has direct implications over the general heat of surrounding natural hubs, which start to degrade.
 
-This is becoming not only a dangerous phenomenon but also expensive, as cities are investing more and more on greener energies, in more green areas, in changing economic and social behaviours, and in general being more heat and energy efficient.
+This is becoming not only a dangerous phenomenon but also expensive, as cities are investing more and more on greener energies, in more green areas, in changing economic and social behaviors, and in general being more heat and energy efficient.
 
 ## **Policies**
 
+To combat UHIs effectively, policies must encompass a broad spectrum of urban planning and design strategies. This involves the integration of green infrastructure, such as parks, green roofs, and urban forests, which can provide shade and reduce surface temperatures through evapotranspiration. Reflective materials for buildings and pavements can deflect sunlight and decrease heat absorption. Enhancing urban ventilation can also play a significant role in reducing UHIs, facilitating the natural cooling of urban areas.
+
+Additionally, policies should encourage the use of sustainable transportation options to reduce heat-generating traffic congestion. The development of compact, mixed-use communities can decrease the need for vehicular travel, thus reducing the heat emitted by vehicles. Urban planning policies that prioritize pedestrian-friendly and shaded pathways encourage walking and biking, further reducing the urban heat footprint.
+
 Addressing UHIs requires comprehensive policy strategies, including the promotion of green infrastructure, reflective building materials, and enhanced urban planning to increase ventilation and shade. These measures can mitigate the effects of UHIs, improving urban resilience and sustainability.
 
-### **Global level**
-- New Urban Agenda
-- Sustainable Development Goals
-- Beat The Heat Handbook
+### **Policy at a Global level**
 
-### **City level - Medellin's Corredor Verde**
-- Successfully improved air quality and urban biodiversity through the expansion of green spaces.​
-- Created accessible public green areas that promote outdoor activities and social interaction.​
-- Encouraged non-motorized transportation with integrated bicycle lanes and pedestrian paths, reducing car dependency.
+At the global level, initiatives like the New Urban Agenda, Sustainable Development Goals (SDGs), and resources such as the Beat The Heat Handbook offer frameworks and guidelines for tackling UHIs through sustainable urban development practices.
+
+New Urban Agenda: Adopted at the United Nations Conference on Housing and Sustainable Urban Development (Habitat III) in 2016, the New Urban Agenda provides a roadmap for building cities that can accommodate future growth in a sustainable, resilient, and inclusive way. It emphasizes the need for green public spaces, sustainable mobility, and environmentally sustainable and resilient urban development.
+
+Sustainable Development Goals (SDGs): Specifically, SDG 11 focuses on making cities and human settlements inclusive, safe, resilient, and sustainable. Addressing UHIs fits within this goal by promoting sustainable urban design and infrastructure that contribute to cooler urban environments. Implementing UHI mitigation strategies aligns with achieving several targets under SDG 11.
+
+Beat The Heat Handbook: This resource, developed by various international organizations, provides practical guidance for cities to understand, plan, and respond to heatwaves and the urban heat island effect. It compiles best practices and case studies, offering valuable insights into developing and implementing effective heat action plans that can be adapted to local contexts.
+
+Collectively, these global frameworks and resources emphasize the importance of integrated planning, investment in green infrastructure, and the adoption of sustainable practices to mitigate UHIs. They also highlight the need for collaboration across different levels of government, the private sector, civil society, and the international community to share knowledge, innovations, and solutions that can be tailored to the specific needs and conditions of urban areas around the world. 
+
+## Remote Sensing
+
+Remote sensing technologies, particularly satellite imagery, play a crucial role in addressing urban heat island (UHI) effects, a phenomenon where urban regions experience significantly higher temperatures than their rural counterparts due to human activities and the prevalence of surfaces that absorb and retain heat. Satellites like Landsat and the Moderate Resolution Imaging Spectroradiometer (MODIS) are at the forefront of monitoring these temperature disparities, offering critical insights into urban climate dynamics.
+
+Landsat satellites, with their detailed spatial resolution, provide comprehensive data on land cover and land use changes over time, enabling the identification of areas contributing most significantly to UHI effects. This capability is essential for urban planners and environmental scientists looking to pinpoint specific urban sectors that may require green infrastructure interventions, such as increased vegetation or reflective materials, to mitigate heat absorption.
+
+MODIS, on the other hand, stands out due to its high temporal resolution, capturing 1-2 images daily for almost any location on the globe. This frequent data collection is invaluable for tracking temperature variations over short intervals, allowing for near-real-time monitoring of UHI effects and the effectiveness of mitigation strategies implemented to combat them. The ability of MODIS to provide daily temperature data supports efforts to understand how urban heat fluctuates with changing weather patterns, urban development, and seasonal changes, providing a dynamic view of the urban climate.
+
+Together, the detailed land cover data from Landsat and the high-frequency temperature data from MODIS offer a comprehensive toolkit for detecting, understanding, and monitoring UHI effects. These insights enable targeted interventions, such as the strategic placement of green spaces or the implementation of cool roofs, to reduce urban temperatures and improve the livability of cities facing the challenges of climate change and urbanization.
+
+### **Application - Medellin's Corredor Verde**
+
+Medellín's approach to combating urban heat and improving environmental quality through its innovative Green Corridors project offers a compelling model for cities worldwide grappling with the challenges of urbanization and climate change. Here's a breakdown of the project's aspects:
+
+**Problematic:** Rising temperatures and poor air quality, exacerbated by the urban heat island effect and significant increases in private transport, have become pressing issues for Medellín. The city's geographical position in the Aburrá Valley further complicates these challenges by trapping pollution within its boundaries, with conditions unfavorable for the dispersion of pollutants.
+
+**Proposal:** In response, the city initiated the Green Corridors project in 2016, aiming to mitigate heat and improve air quality through the extensive planting of over 30 corridors with 120,000 plants and 12,500 trees initially, expanding to 2.5 million smaller plants and 880,000 trees by 2021. This initiative sought to transform urban spaces by integrating greenery into road verges, vertical gardens, and along waterways, effectively connecting the city's green spaces.
+
+**Methodology:** The project was strategically planned and implemented to enhance green coverage in areas lacking it, with a focus on major roads and waterways. An investment of $16.3 million was initially made, with ongoing maintenance costs. The selection of plant species, including highly pollution-absorbent ones like the mango tree (Mangifera indica), was critical to the project's goals of cooling the city and improving air quality.
+
+**Results:** The implementation of green corridors has led to a noticeable 2°C reduction in temperature across the city, alongside potential improvements in air quality and biodiversity. Early studies and observations suggest the project has been effective in absorbing pollutants and reducing CO2 emissions, though comprehensive data on pollution reduction is still forthcoming.
+
+![](medellin 1.jpg) 
+
+**Conclusions:** Medellín's Green Corridors project exemplifies how nature-based solutions can address urban environmental challenges, offering a replicable model for other cities. Its success highlights the importance of community support, innovative planning, and the integration of green spaces in urban design to create climate-resilient and sustainable cities. The project's popularity and effectiveness have inspired other Colombian cities and regions like São Paulo to adopt similar initiatives, underlining the potential of green corridors as a global urban strategy against the impacts of climate change.
+
+For cities looking to replicate Medellín's success, the key lies in strategic planning, community engagement, and a commitment to sustainable urban development. The project's achievements have not only improved Medellín's climate resilience but also set a precedent for urban environmental management worldwide.
 
 ## **Personal Reflection:**
 
-The study of UHIs underscores the importance of integrating environmental considerations into urban planning and policy. Reflecting on potential solutions highlights the need for innovative approaches to urban design and infrastructure development, aiming to reduce the heat island effect and its associated risks.
+The study of UHIs highlights the importance of integrating environmental considerations into urban planning and policy. Reflecting on potential solutions highlights the need for innovative approaches to urban design and infrastructure development, aiming to reduce the heat island effect and its associated risks.
+
+I had never really analyzed environmental sustainability challenges from an urban perspective, mixing both of my interests and professional experience. There are many innovative ways in which cities (and their mix of stakeholders) can combat and mitigate increasing heat in their cities, by building smart and sustainable infrastructure, changing and reducing economic activities, and over all changing human behavior. 
+
+For all of this to be done successfully, remote sensing is needed to actually measure and quantify the problematic, identify the specific spaces and regions where the problematic is critical (as well as the spaces and regions where there is no problem at all), and being able to design appropriate infrastructure and policy changes that not only contribute environmentally, but also economically and socially. 
+
+I was even more inspired, by reading Medellin's example, as I am a Colombian and have always considered Medellin to be a great example of sustainable growth and development, specifically compared to Bogota. All though I know many of the social and political implications that this project and have a critical view, it was interesting to learn about the technical achievements and positive impact that it did have. 
