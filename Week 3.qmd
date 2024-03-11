@@ -2,34 +2,77 @@
 
 ## **What is it?**
 
-Satellite images are crucial sources of geospatial information, but they are not immune to distortions that can impact the accuracy of spatial analysis. These distortions may arise from various factors, including off-nadir view angles, variations in topography, wind effects (particularly in aerial data collection), and even the Earth's rotation. To address these distortions and ensure the precise alignment of satellite imagery with geographic data, a process known as geometric correction is employed. Geometric correction plays a pivotal role in rectifying these distortions, making it an indispensable step in the preparation of satellite imagery for accurate spatial analysis.
+Just like any data recollection tool, Satellites are not always accurate and need some sort of correction or enhancements to improve the images they gather. The distortions can be caused by many things such as wrong view angles, harsh variations in topography, strong winds, or other climactic conditions such as rain or snow. 
 
-Geometric correction is a meticulous process that involves several key steps. Ground Control Points (GCPs), often established through Global Positioning System (GPS) measurements, serve as reference markers. These GCPs are used to establish a mathematical model for geometric transformation, enabling the adjustment of the image's coordinates. Various transformation algorithms are available to model the actual coordinates accurately. The correction process encompasses both forward and backward mapping to ensure precise alignment. Additionally, the accuracy of the geometric correction is assessed using metrics such as Root Mean Square Error (RMSE). Lower RMSE values indicate a better fit of the corrected data to the reference dataset. Overall, geometric correction is fundamental in enhancing the accuracy and usability of satellite imagery for a wide range of applications, from environmental monitoring to urban planning.
+Geometric correction is the process in which satellite imagery is corrected. Each image has reference markers, such as each coordinates, which help trace and map images from before and after. All of these images are then passed through different mathematical algorithms for correction. 
 
-![Remote Sensing](remote%20sensing.jpg)
-[Remote Sensing Earth Observation Guide](https://gisgeography.com/remote-sensing-earth-observation-guide/)
+There are many different types of correction and enhancement.I will get into further detail about Dark Object Substraction.
 
-## **Practical Application and Use:**
+![](correction.png)
 
-Correction techniques play a pivotal role in the realm of remote sensing, underpinning the foundation of accurate and reliable data acquisition. Their importance cannot be overstated, as they serve as the linchpin for ensuring that remotely sensed imagery can be effectively harnessed across a multitude of applications. The process of correction not only rectifies distortions but also paves the way for the extraction of valuable information from remote sensing data. This corrected data is indispensable for critical tasks such as land cover classification, change detection, and the assessment of biophysical parameters like temperature, leaf area index, and NDVI. These correction techniques find practical applications in diverse fields, including agriculture, urban planning, environmental monitoring, and disaster management. Ultimately, they elevate the quality and utility of remote sensing products, equipping decision-makers with invaluable insights for making informed choices and driving evidence-based decisions.
+## **Dark Object Substraction (DOS)**
 
-![Remote Sensing](remote%20sensing.jpg)
-[Remote Sensing Earth Observation Guide](https://gisgeography.com/remote-sensing-earth-observation-guide/)
+### Definition:
+Dark Object Subtraction (DOS) is a correction technique that assumes the darkest pixel in an image should ideally have a value of 0, attributing any existing value to atmospheric interference. 
+
+### Use:
+DOS is utilized to correct satellite or any raw imagery data, by compensating for atmospheric haze or scatter radiance. This correction is crucial for applications requiring precise surface reflectance measurements, such as environmental monitoring, land use analysis, and vegetation mapping.
+
+### Methodology:
+- Acquisition of Raw Satellite Imagery: Use raw satellite imagery in DN format.
+- Merging of multiple tiles: Landsat tiles are organized using a Worldwide Reference System based on PATH (columns) and ROWS, but these tiles might not align perfectly with administrative boundaries. For comprehensive coverage, such as for Cape Town, two or possibly three Landsat tiles might be needed. The merging process involves downloading two (or more) satellite tiles that are temporally close and have minimal cloud cover, preferably from Landsat Collection 2, Level 2 for surface reflectance data.Merging is done by loading the selected tiles into a software environment (e.g., using terra in R) and combining them using functions like terra::mosaic(), aiming for a seamless representation of the study area.
+- Identification of the Haze Value: Compute the haze value for each band (up to NIR), representing the atmospheric radiance. Select the darkest pixels (indicative of shadows or water) and assuming a minimal reflectance value, often 1%, to approximate the amount of radiance attributed to atmospheric conditions.
+- Conversion of DN to Radiance: Apply a regression equation to transform DN values to at-sensor radiance, which reflects the actual light measured by the satellite sensor.
+- Application of DOS Correction: Subtract the calculated 1% reflectance value from the radiance values to adjust for atmospheric effects. This process is based on the assumption that most natural surfaces have some level of reflectance rather than being completely dark.
+- Final Computation for Reflectance: Utilize the DOS formula to compute the corrected surface reflectance, accounting for factors like the solar zenith angle and Earth-sun distance, which are derived from satellite metadata and standard constants.
+
+## **Types of Enhancement**
+
+Allthough there are many types of enhancement that can be done to satellite imaging, I will talk about just a few:
+
+**Ratio:**
+Rationing involves calculating the difference between two spectral bands to highlight specific landscape features. The Normalized Difference Vegetation Index (NDVI) is a common example, exploiting the spectral trait where healthy vegetation reflects more in the Near-Infrared (NIR) but absorbs in the Red wavelength. This method is useful for identifying areas with healthy vegetation.
+
+![](Screenshot 2024-03-11 114906.png)
+
+**Filtering:**
+Filtering applies moving window operations to data, which can enhance or suppress certain features. An example is the Laplacian filter, used to highlight edges or contrast in the imagery, thus aiding in feature identification and analysis.
+
+![](Screenshot 2024-03-11 115243.png)
+
+**Texture**
+Texture Analysis focuses on the pixel-to-pixel relationships within an image to describe surface characteristics. This technique is valuable for distinguishing between different land cover types based on their texture, such as smooth grassland or bumpy deciduous forests.
+
+![](texture correction.png)
+
+## **Application of GLCM Method**
+
+One of the practical exercises this week, was to use the GLCM package in R Studio to correct the texture in some satellite imagery. 
+
+The GLCM method is used to extract statistical measures from satellite images that can help differentiate between different land cover types based on their texture, such as distinguishing forests from urban areas. 
+
+The GLCM package in R facilitates texture analysis by computing a matrix where the frequency of co-occurring pixel values at a certain spatial relationship is recorded. This matrix is then used to calculate various texture statistics that describe the heterogeneity or patterns within the image. 
+
+- The size of the moving window determines how large an area each calculation considers. A window of size (7, 7) means that for each pixel, the texture is analyzed based on its 7x7 neighbors.
+- The shift parameter defines the spatial relationship between pixel pairs considered in the GLCM. It's essentially the direction and distance between the pair of pixels. 
+- The GLCM package can compute various texture measures such as homogeneity, contrast, and correlation. These measures provide quantitative data on the texture's smoothness, variation, and spatial dependency among pixels. The choice of statistics will depend on the aspect of texture you are interested in analyzing.
+- GLCM functions require raster layers from the raster package as input. Therefore, data must be converted into a raster layer format before applying GLCM texture analysis.
+
+![](homogeneity.png)
+
+Interpretation of results:
+- Color Scale: The bar on the right represents the scale of homogeneity values, typically ranging from 0 to 1. A value closer to 1 indicates high homogeneity, meaning the texture is very uniform in that area. Values closer to 0 suggest low homogeneity, where the texture is less uniform and more varied.
+- Color Representation: The colors in the image correspond to the homogeneity values at each location. For example, areas colored in green might indicate regions of higher homogeneity, while yellow to pink areas might represent lower homogeneity.
+- Spatial Distribution: The distribution of colors across the plot shows how homogeneity varies spatially. Clusters of similar colors indicate areas with similar texture properties. For example, large green areas would be more uniform in texture, possibly open fields or water bodies, while mixed colors like yellow and pink could suggest urban or forested areas with more complex structures.
 
 ## **Personal Reflection:**
 
-In the world of remote sensing, understanding and using geometric and atmospheric correction techniques is a big deal, it is one of the most important things. These techniques make sure that the pictures and data we get from satellites will really show what's happening on Earth. As technology keeps getting better, we've got more robust tools and tricks that make these corrections even more precise and easier to make.
+If one is going to learn about remote sensing data, one must also learn about how to correct and enhance the images and data. These techniques make sure that the pictures and data we get from satellites will really show what's happening on Earth. 
 
 As an anthropologist, working in environmental conservation and rural development, and now diving into data science, I am getting very inspired by all of this new information regarding remote sensing. Remote sensing will let me gather lots of info about our planet and using these correction techniques, it will be easier to make smart decisions for the environment and how rural areas develop.
 
-## Resources
+I really enjoyed applying the GLCM method because it provided key insights into the spatial arrangement of pixel values. This could easily be used for land cover classification, environmental monitoring, and urban planning, where understanding the texture is crucial for accurate analysis.This is something that I in-vision myself using in my personal and professional interests.
 
-Joyce, K., 2013. Radiative transfer and atmospheric correction video
-Jensen, J.R., 2015. Introductory digital image processing: a remote sensing perspective. Prentice-Hall Inc.
-Atmospheric correction, Chapter 6, p.208
-Types of Geometric correction, Chapter 7, p.242
-Mosaicking, Chapter 7, p.267
-Image enhancements, Chapter 8, p.273
-Schulte to Bühne, H., Pettorelli, N., 2018. Better together: Integrating and fusing multispectral and radar satellite imagery to inform biodiversity monitoring, ecological research and conservation science. Methods in Ecology and Evolution 9, 849–865.
+
 
 
