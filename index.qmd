@@ -1,9 +1,11 @@
-# About
+# About me
 
 Hello to all. I am Ana.
 
-I am a proud Colombian, very interested in understanding socio-cultural, economic and environmental behaviors around me, and commited to improving livelyhoods and conditions for people and communities around the world.
+![Optional Image Caption](foto ana.jpg)
+
+I am very interested in understanding socio-cultural, economic and environmental behaviors around me, and commited to improving livelihoods and conditions for people and communities around the world.
 
 I studied anthropology for my undergrad and later finished an MSc in Sustainable Development, currently I am studying an MSc in Social and Geographic Data Science. I have more than 8 years of experience working in rural development in Colombia, analyzing and developing different economic activities that contribute to both cultural and environmental conservation, as well as coordinating efforts with regional governments, NGO's and the environmental sector.
 
-My expectation with this masters, and this specific course, is to adquire as many tools and skills in social and environmental data collection and analysis, that will permit me to continue designing, implementing and evaluating development projects and programs.
+My expectation with this masters, and this specific course, is to acquire as many tools and skills in social and environmental data collection and analysis, that will permit me to continue designing, implementing and evaluating development projects and programs.

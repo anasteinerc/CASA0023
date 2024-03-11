@@ -1,45 +1,46 @@
 
-# Week 1 - Introduction to Remote Sensing
+# Introduction to Remote Sensing
 
-**Summary:** Remote sensing, as defined by NASA, involves acquiring information from a distance, utilizing a variety of sensors on platforms like satellites, planes, and drones. Over 150 satellites and more than 27,000 devices in orbit provide a rich array of data sources such as Sentinel, LANDSAT, and SAR satellites, facilitating diverse applications from environmental monitoring to urban planning.
+## What is it?
+Remote sensing, as defined by NASA, involves acquiring information from a distance, utilizing a variety of sensors on platforms like satellites, planes, and drones. Over 150 satellites and more than 27,000 devices in orbit provide a rich array of data sources such as Sentinel, LANDSAT, and SAR satellites, facilitating diverse applications from environmental monitoring to urban planning.
 
-![Remote Sensing](remote%20sensing.jpg)
-[Remote Sensing Earth Observation Guide](https://gisgeography.com/remote-sensing-earth-observation-guide/)
+![Remote Sensing](remote sensing.jpg)
 
-**Applications:** The significance of remote sensing extends across various fields. It's instrumental in environmental monitoring, aiding in climate change research, deforestation tracking, and oceanography. Urban planning benefits from detailed land use and development data, while disaster response initiatives rely on immediate data for efficient management and recovery efforts.
+## Types of Sensors
+**Passive sensors** read solar light that is reflected off the earth’s surface; they do not emit any additional energy. A limitation is that the light can be interrupted or disturbed by clouds, contamination or any other physical obstacle.  
 
-## Inserting Multimedia
+**Active sensors** send signals down to the earth that bounces back to the sensor; this makes them much more effective towards climate and atmospheric conditions.
 
-To visually represent the impact and applications of remote sensing, insert images or links to videos here. For example, to include an image of satellite data visualization:
+There are different types of **radiation**, due to different materials and objects that reflect energy and light differently.The variance in radiation have different wavelengths within the electromagnetic spectrum. There is a need for different sensors to read different wavelengths and analyse different information.
 
-```markdown
-![Satellite Data Visualization](path_to_image)
-```
+## Types of Resolution
+Remote sensing has four resolutions:
 
-Replace `path_to_image` with the actual path or URL to your image.
+**Spectral:** The number of bands that the sensor records. Visible light is made up of red, green and blue light (R,G,B).
 
-## Example Code Snippet
+**Spatial:** The size of each pixel in the image (very high resolution is in cm while high resolution can go up to various kms).
 
-Below is a simplified code snippet to demonstrate data retrieval from a remote sensing satellite. 
+**Temporal:** The frequency in which an area is revisited to capture more images to compare (various times a day, months appart, or years appart).
 
-```r
-# Placeholder code for data retrieval
-# Replace with actual code relevant to your data and analysis
-library(raster)
-satellite_data <- raster("path_to_satellite_data.tif")
-plot(satellite_data)
-```
+**Radiometric:** The range of reflectance values that the sensor recognizes.
 
-**Reflection:** The exploration of remote sensing technologies reveals their critical role in contemporary environmental and urban management challenges. The potential to make meaningful contributions to sustainability and disaster management is particularly motivating, highlighting the importance of ongoing technological advancements in the field.
+There is a constant compensation between different resolutions to find a balance to get optimal data as needed. In the next section, you can see two different examples. 
 
-## Citations
+## Applications 
+The significance of remote sensing extends across various fields. It's instrumental in environmental monitoring, aiding in climate change research, deforestation tracking, and oceanography. Urban planning benefits from detailed land use and development data, while disaster response initiatives rely on immediate data for efficient management and recovery efforts.
 
-Reference key studies and sources to underscore the applications and impact of remote sensing. Use the following format to cite sources within your text:
+**High Spatial Resolution, Low Temporal Resolution**
+Archaeological Site Discovery: This application benefits significantly from high spatial resolution because it allows for the detailed observation of surface features that might indicate the presence of archaeological remains, such as ancient structures, roads, or tools, even if they are buried under vegetation or soil. The subtle differences in soil color, vegetation health, or topography that hint at archaeological features are more discernible with finer spatial detail. Since these sites and features do not change rapidly over time, low temporal resolution is acceptable. For example, capturing images of a potential archaeological site once a year or even less frequently might be sufficient because the changes of interest happen over decades or centuries, not days or weeks.
 
-```markdown
-According to NASA [^1], remote sensing is essential for global monitoring and management.
+![Archaeology Site](arqueology site.png)
 
-[^1]: NASA, "Remote Sensing Basics," URL to NASA resource.
-```
+**Low Spatial Resolution, High Temporal Resolution**
+Weather Forecasting: For weather forecasting, high temporal resolution is crucial because weather conditions can change rapidly, and frequent updates are necessary to provide accurate forecasts. Meteorologists rely on data collected at intervals ranging from minutes to hours to track the development and movement of weather systems, such as storms, fronts, and precipitation patterns. However, the spatial resolution can be lower because the phenomena of interest, such as temperature gradients and large-scale atmospheric pressure changes, occur over large areas. Thus, capturing the broad patterns rather than the fine details is sufficient for effective forecasting.
 
-Replace `URL to NASA resource` with the actual URL to the citation source.
+![Weather Forecast](weather forecast.jpg)
+
+##Reflection
+
+Personally, everything I learnt this week was completely new to me. I did not know about the different types of sensors, nor was I clear on all the physics behind their image recollection. I know understand the huge value that they have on various types of measurements and studies (both urban and rural, which I find fascinating). I always though of this type of data recollection and analysis very foreign to me, but now I understand that in the fields and professions that I am interested in, I could easily incorporate satellite data. 
+
+Doing the practical exercise, working with the raster data, processing it and then visualizing it, was very useful for me to understand the physics behind it all; seeing how all images that we see in real life are a composition of different color layers and a lot of different data. 
