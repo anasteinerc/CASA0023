@@ -1,7 +1,7 @@
 
 # Week 2 - Landsat Satellites and Their Importance
 
-This week, we focused on the crucial role of Landsat satellites in modern environmental and urban monitoring and analysis. In the following presentation, you can read the insights into their methodologies, technology, applications, and evolutionary improvements over time.
+This week, we focused on the crucial role of Landsat satellites in environmental and urban monitoring and analysis. In the following presentation, you can read the insights into their methodologies, technology, applications, and evolutionary improvements over time; as well as an evaluation on it's limitations.
 
 ```{r echo=FALSE, out.width='100%'}
 
