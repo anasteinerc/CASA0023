@@ -1,4 +1,4 @@
-# Week 5 - Temperature and policy
+# Week 9 - Temperature and policy
 
 **Overview:** 
 A critical issue in urban development is that of Urban Heat Islands (UHIs) and the interplay between urban temperature dynamics and public policy. UHIs result in higher urban temperatures compared to surrounding areas, posing significant challenges to urban living and environmental sustainability.
@@ -51,7 +51,7 @@ Together, the detailed land cover data from Landsat and the high-frequency tempe
 
 Medellín's approach to combating urban heat and improving environmental quality through its innovative Green Corridors project offers a compelling model for cities worldwide grappling with the challenges of urbanization and climate change. Here's a breakdown of the project's aspects:
 
-**Problematic:** Rising temperatures and poor air quality, exacerbated by the urban heat island effect and significant increases in private transport, have become pressing issues for Medellín. The city's geographical position in the Aburrá Valley further complicates these challenges by trapping pollution within its boundaries, with conditions unfavorable for the dispersion of pollutants.
+**Problem:** Rising temperatures and poor air quality, exacerbated by the urban heat island effect and significant increases in private transport, have become pressing issues for Medellín. The city's geographical position in the Aburrá Valley further complicates these challenges by trapping pollution within its boundaries, with conditions unfavorable for the dispersion of pollutants.
 
 **Proposal:** In response, the city initiated the Green Corridors project in 2016, aiming to mitigate heat and improve air quality through the extensive planting of over 30 corridors with 120,000 plants and 12,500 trees initially, expanding to 2.5 million smaller plants and 880,000 trees by 2021. This initiative sought to transform urban spaces by integrating greenery into road verges, vertical gardens, and along waterways, effectively connecting the city's green spaces.
 

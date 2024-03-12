@@ -1,18 +1,51 @@
 # Week 6 - Google Earth Engine
 
 **Overview**
-The text covers a comprehensive exploration of Google Earth Engine (GEE), a cloud-based platform that enables planetary-scale environmental data analysis. It details the setup and practical application of GEE, focusing on how it facilitates the processing of massive environmental datasets, the introduction to GEE terminology, the execution of code on the platform, and specific functionalities such as data manipulation, machine learning, and image processing techniques. Additionally, it touches on the practical aspects of using GEE for environmental monitoring and analysis, highlighting its impact on speeding up data processing tasks compared to traditional methods.
+This week was dedicated to Google Earth Engine (GEE), a cloud-based platform that enables planetary-scale environmental data analysis, and facilitates the processing of massive environmental datasets.
 
 ## Explanation
+
+![](Screenshot 2024-03-11 151442.png) 
+
 GEE functions by storing environmental datasets on cloud servers and processing this data server-side based on code written by users. It handles different data types, including raster (Image) and vector (Feature) data, and supports operations like image collection manipulation, regression analysis, and machine learning. GEE's architecture is designed around client-server interactions, with client-side code running in the user's browser and server-side operations executed on Google's servers.
 
 ## Practical Implementation
 The practical implementation of GEE involves setting up the environment, understanding GEE-specific terms, and writing JavaScript code for data analysis. Users can manipulate data through operations like filtering image collections, applying regression analysis to detect changes over time, and employing machine learning for classification tasks. The platform also supports the visualization of processed data, enabling users to generate interactive maps and applications.
 
-## Examples
-- Data Manipulation: Loading Landsat surface reflectance data, filtering by date and cloud cover, and visualizing it on the map.
-- Machine Learning: Introduction to supervised and unsupervised classification techniques within GEE.
-- Image Processing: Techniques like applying scale factors, mosaicing images to address differences between tiles, and performing principal component analysis (PCA) to reduce data dimensionality.
+**Mapping Points in Google Earth Engine**
+You can easily center the map on a specific location by creating a point object with geographic coordinates. For example, to focus on Delhi, you can construct a point with its latitude and longitude using the code snippet var Delhi_point = ee.Geometry.Point([77.216721, 28.644800]); followed by Map.centerObject(Delhi_point, 10); to center and zoom the map on this location. Additionally, you have the option to manually add points to the map through the GUI by selecting the point icon, creating a new layer, and giving it a suitable name. This process allows for the dynamic exploration of specific areas within the GEE platform.
+
+**Working with Landsat Data**
+Landsat data can be accessed and loaded into GEE script from the data catalogue, and be filtered the Landsat 9 data for a specific time frame.You can also add a specific dataset as a layer on the map, allowing for visual inspection and analysis. Further filtering options can refine the dataset based on time, region of interest, and cloud cover to ensure the data's relevance and quality.
+
+**Enhancing Image Quality**
+Applying scale factors and offsets is crucial for accurate representation. Implementing a function to apply these scale factors can significantly improve the quality of the images for analysis.Subsequently, applying a median reducer can help in creating a more representative image of the study area.
+
+**Creating Mosaics and Clipping Images**
+Mosaicing and clipping are essential techniques for managing differences between tiles and focusing analysis on specific regions. By mosaicing an image collection before applying statistical operations like mean or median, and then clipping the result to the area of interest, one can achieve a cohesive and focused dataset for analysis.
+
+**Advanced Analysis and Exporting**
+Further analysis techniques such as texture measures, Principal Component Analysis (PCA), and calculating indices like NDVI are available in GEE for deeper insights into the data. GEE also offers exporting functionality to share or save your work outside the platform. Lastly, the extensive data catalog in GEE provides access to a wide range of datasets, supporting a variety of environmental and geographical analyses.
+
+**Machine Learning**
+
+ML algorithms can be applied to perform tasks such as classification, regression, and clustering directly within the cloud-based platform. This enables researchers and practitioners to efficiently process satellite imagery and geospatial data for various applications, including land cover classification, vegetation index prediction, water resource management, and urban planning. GEE supports a range of ML models, from simple linear regressions to more complex algorithms like Random Forests and Support Vector Machines. 
+
+## Example of Application - Lake Baikal Basin
+
+A study conducted by Kai Li and colleagues, "Deep learning empowers the Google Earth Engine for automated water extraction in the Lake Baikal Basin", introduces a novel approach using deep learning within the Google Earth Engine (GEE) for efficient and automated water body extraction in the Lake Baikal Basin, the world's largest freshwater lake by volume. Facing the challenge of accurately acquiring large-scale, long-term data across the bi-national basin of Russia and Mongolia, the researchers combine local deep learning training with GEE's cloud-based computing to imbue the platform with the necessary computational power for deep learning tasks. By selecting features sensitive to water bodies, such as visible light, near infrared, and the Modified Normalized Difference Water Index (MNDWI), along with quality assessment (QA) bands to refine training labels, the methodology enables rapid access to highly accurate spatiotemporal water body distribution data.
+
+![](example mlgee.jpg) 
+
+The study successfully extracted water bodies for nine yearly periods between 2013 and 2021, validating the model's high accuracy (over 92%) and demonstrating its potential for continuous monitoring and assessment of water dynamics. This work not only showcases the integration of deep learning models with GEE for environmental monitoring but also addresses the limitations of GEE in supporting deep learning computations directly. By offering a solution that rapidly automates the deployment of deep learning models for large-scale environmental analysis, this research provides valuable methodological support for understanding water resources and their temporal variability, crucial for climate change studies, disaster prevention, and sustainable management of water ecosystems.
+
+![](mlgee mosaic.jpg) 
+![](mlgee enhancement.jpg) 
 
 ## Personal Reflection
-The transition to Google Earth Engine has significantly streamlined the remote sensing workflow, eliminating the need for manual image downloading and processing, thereby saving considerable time and computational resources. The platform's ability to handle massive datasets rapidly and its extensive data catalog have opened up new possibilities for environmental monitoring and analysis. While the reliance on JavaScript might initially seem daunting, the platform's extensive documentation and community support make it accessible. The potential uncertainty about Google's long-term commitment to providing GEE as a free service remains a concern, but for now, it represents a valuable tool for environmental scientists and researchers.
+
+This was one of the most interesting weeks for me. First of all, I was very grateful to use Google Engine as I thought that it was by far the easiest methodology and data typology to understand, from everything else that we have learnt or applied. Additionally, it really opened my mind to everything that can be done, analysed and predicted using GEE.
+
+Reading the study that I mention above, applied in the Lake Baikal Basin in Russia, really made me think of how similar things could be done in Colombia, where I come from. Monitoring water resources, and there are many in Colombia, has always been a challenge because of the difficult topography and varying weather and climate conditions, but the use of ML could facilitate similar processes. 
+
+It also inspired me to see how technology, even in geography and environmental studies, is rapidly evolving and the need for all researchers (at any level) to me committed to change, improve and evolve.
