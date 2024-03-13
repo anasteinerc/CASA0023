@@ -1,53 +1,46 @@
 
 # Week 8 - Classification II
 
-**Overview:** Building on earlier discussions, Week 8 delves deeper into classification in remote sensing, addressing big questions, the imperative of accuracy assessment, and exploring innovative classification approaches like OBIA and sub-pixel analysis. The lecture underscores the value of pre-classified datasets for enhancing the training and validation of classification models.
+**Overview:** For Week 8 we went deeper into classification in remote sensing, addressing big questions such as accuracy assessment, and exploring new classification approaches like OBIA and sub-pixel analysis. 
 
 ## Advanced Classification Concepts
 
-- **Accuracy Assessment:** A critical component of the classification process, ensuring that the results are reliable and applicable for decision-making.
 - **Innovative Approaches:** Introduction to OBIA and sub-pixel analysis, which offer more nuanced insights into land cover and land use data.
+- **Accuracy Assessment:** A critical component of the classification process, ensuring that the results are reliable and applicable for decision-making.
 
-## Importance of Pre-classified Datasets
+## Sub-pixel Analysis
+
+This technique focuses on the intricate details within each pixel to determine land cover types. By comparing the reflectance values of a pixel to the 'ideal' values for each land cover class, it infers the dominant land cover based on probability. Such analysis was applied to Cape Town, showing promising results in distinguishing between natural vegetation, urban areas, and dry grass, although some misclassifications were noted in nature reserves.
+
+## Object-based Image Analysis (OBIA)
+
+OBIA takes a holistic approach, clustering similar pixels into 'super pixels' to analyze land cover. Utilizing the Simple Non-Iterative Clustering (SNIC) algorithm followed by the CART model, this method proved effective in identifying natural and urban areas, offering an improvement over sub-pixel analysis in some respects but potentially underestimating vegetation and urban extents.
+
+## Accuracy Assessment
 
 Datasets such as GlobeLand30, ESA's Climate Change Initiative land cover, and Dynamic World play a pivotal role in training and validating classification algorithms, providing a robust foundation for accurate environmental monitoring.
 
-## Example Code Snippet
+Accuracy Assessment: Accuracy is key in evaluating these models, with common measures including user's accuracy (precision), producer's accuracy (recall), and the F1 score, all derived from a confusion matrix. These metrics help quantify the reliability and representation of the classification results.
 
-Below is a placeholder example demonstrating the use of a pre-classified dataset in a classification task. Replace this with specific code relevant to your analysis.
+Applications and Advances: The realm of land use and land cover classification is rapidly evolving with applications ranging from real-time global updates to urban inundation mapping and the identification of informal settlements. Innovations, particularly those leveraging deep learning and mixed data sources, are expanding the capabilities and applications of remote sensing.
 
-```python
-# Example code for utilizing a pre-classified dataset
-# Note: This is a simplified example. Replace with actual analysis code.
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score
-# Assume X, y are features and labels from a pre-classified dataset
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3)
-# Perform classification and evaluate accuracy
-```
+## Example of Application - Lake Baikal Basin
 
-## Reflection
+A study conducted by Kai Li and colleagues, "Deep learning empowers the Google Earth Engine for automated water extraction in the Lake Baikal Basin", introduces a novel approach using deep learning within the Google Earth Engine (GEE) for efficient and automated water body extraction in the Lake Baikal Basin, the world's largest freshwater lake by volume. Facing the challenge of accurately acquiring large-scale, long-term data across the bi-national basin of Russia and Mongolia, the researchers combine local deep learning training with GEE's cloud-based computing to imbue the platform with the necessary computational power for deep learning tasks. By selecting features sensitive to water bodies, such as visible light, near infrared, and the Modified Normalized Difference Water Index (MNDWI), along with quality assessment (QA) bands to refine training labels, the methodology enables rapid access to highly accurate spatio temporal water body distribution data.
 
-The exploration of advanced classification techniques and the emphasis on accuracy assessment highlight the evolving complexity of remote sensing analyses. These advancements underscore the need for continuous innovation and rigorous validation to address global environmental challenges.
+![](example mlgee.jpg) 
 
-## Multimedia Insertion
+The study successfully extracted water bodies for nine yearly periods between 2013 and 2021, validating the model's high accuracy (over 92%) and demonstrating its potential for continuous monitoring and assessment of water dynamics. This work not only showcases the integration of deep learning models with GEE for environmental monitoring but also addresses the limitations of GEE in supporting deep learning computations directly. By offering a solution that rapidly automates the deployment of deep learning models for large-scale environmental analysis, this research provides valuable methodological support for understanding water resources and their temporal variability, crucial for climate change studies, disaster prevention, and sustainable management of water ecosystems.
 
-To illustrate the advanced techniques discussed, include images or diagrams that showcase examples of OBIA, sub-pixel analysis, or accuracy assessment visualizations. For example:
+![](mlgee mosaic.jpg) 
 
-```markdown
-![OBIA Example](path_to_image)
-```
+![](mlgee enhancement.jpg) 
 
-Replace `path_to_image` with the actual path or URL to your image.
+## Personal Reflection
 
-## Citations
+This was one of the most interesting weeks for me. First of all, I was very grateful to use Google Engine as I thought that it was by far the easiest methodology and data typology to understand, from everything else that we have learnt or applied. Additionally, it really opened my mind to everything that can be done, analysed and predicted using GEE.
 
-Incorporate citations to key studies and resources that delve into advanced classification techniques and their applications in remote sensing:
+Reading the study that I mention above, applied in the Lake Baikal Basin in Russia, really made me think of how similar things could be done in Colombia, where I come from. Monitoring water resources, and there are many in Colombia, has always been a challenge because of the difficult topography and varying weather and climate conditions, but the use of ML could facilitate similar processes. 
 
-```markdown
-For an in-depth exploration of OBIA and sub-pixel analysis, see [^1].
+It also inspired me to see how technology, even in geography and environmental studies, is rapidly evolving and the need for all researchers (at any level) to me committed to change, improve and evolve.
 
-[^1]: Author(s), "Title of the Study on Advanced Classification Techniques," Journal/Conference, Year.
-```
-
-Replace the placeholder citation with actual details from your `references.bib` file.

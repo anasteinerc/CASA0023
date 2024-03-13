@@ -31,21 +31,35 @@ Further analysis techniques such as texture measures, Principal Component Analys
 
 ML algorithms can be applied to perform tasks such as classification, regression, and clustering directly within the cloud-based platform. This enables researchers and practitioners to efficiently process satellite imagery and geospatial data for various applications, including land cover classification, vegetation index prediction, water resource management, and urban planning. GEE supports a range of ML models, from simple linear regressions to more complex algorithms like Random Forests and Support Vector Machines. 
 
-## Example of Application - Lake Baikal Basin
+## Swiss National Point of Contact for Satellite Images (NPOC)
 
-A study conducted by Kai Li and colleagues, "Deep learning empowers the Google Earth Engine for automated water extraction in the Lake Baikal Basin", introduces a novel approach using deep learning within the Google Earth Engine (GEE) for efficient and automated water body extraction in the Lake Baikal Basin, the world's largest freshwater lake by volume. Facing the challenge of accurately acquiring large-scale, long-term data across the bi-national basin of Russia and Mongolia, the researchers combine local deep learning training with GEE's cloud-based computing to imbue the platform with the necessary computational power for deep learning tasks. By selecting features sensitive to water bodies, such as visible light, near infrared, and the Modified Normalized Difference Water Index (MNDWI), along with quality assessment (QA) bands to refine training labels, the methodology enables rapid access to highly accurate spatiotemporal water body distribution data.
+Investigating on practical examples of use and enhancement of GEE data, I found a journal where the NPOC used various methodologies to create a cloud_free, homogeneous Landsat-8 mosaic of Switzerland. 
 
-![](example mlgee.jpg) 
+**Data Source and Pre processing:** The project primarily used Landsat-8 Top of the Atmosphere Reflectance (TOA) data. Due to challenges with predefined algorithms that targeted land areas causing artifacts in open water bodies, a custom water mask was developed to enhance the mosaic's accuracy.
 
-The study successfully extracted water bodies for nine yearly periods between 2013 and 2021, validating the model's high accuracy (over 92%) and demonstrating its potential for continuous monitoring and assessment of water dynamics. This work not only showcases the integration of deep learning models with GEE for environmental monitoring but also addresses the limitations of GEE in supporting deep learning computations directly. By offering a solution that rapidly automates the deployment of deep learning models for large-scale environmental analysis, this research provides valuable methodological support for understanding water resources and their temporal variability, crucial for climate change studies, disaster prevention, and sustainable management of water ecosystems.
+**Algorithm Implementation and Mosaic Process:**
+- A cloud-masking function was developed to assign a cloud score to each pixel, utilizing several criteria to differentiate clouds from other features like snow.
 
-![](mlgee mosaic.jpg) 
-![](mlgee enhancement.jpg) 
+![](zurich.png)
 
-## Personal Reflection
+- Quality bands such as the Normalized Difference Vegetation Index - NDVI, were added to the images to select the pixel with the highest quality value for the mosaic.
+- The mosaic algorithm was designed to operate seasonally across different years, improving the representation of Switzerland's diverse landscapes throughout the seasons.
+Different quality bands were used for land and water areas to ensure a homogeneous appearance across the mosaic.
 
-This was one of the most interesting weeks for me. First of all, I was very grateful to use Google Engine as I thought that it was by far the easiest methodology and data typology to understand, from everything else that we have learnt or applied. Additionally, it really opened my mind to everything that can be done, analysed and predicted using GEE.
+Through the application of quality bands and a cloud-masking function, the project succeeded in creating a visually consistent and cloud-free representation of Switzerland. This was particularly evident in the handling of water bodies and areas with snow coverage, where specialized criteria were applied to maintain clarity and accuracy.
 
-Reading the study that I mention above, applied in the Lake Baikal Basin in Russia, really made me think of how similar things could be done in Colombia, where I come from. Monitoring water resources, and there are many in Colombia, has always been a challenge because of the difficult topography and varying weather and climate conditions, but the use of ML could facilitate similar processes. 
+The study generated seasonal mosaics (winter, spring, summer, autumn) that were then combined to form a comprehensive view of Switzerland. These mosaics utilized NDVI for land areas and a combination of NDVI and cloudiness for water bodies to address the challenges of representing clouds and atmospheric particles.
 
-It also inspired me to see how technology, even in geography and environmental studies, is rapidly evolving and the need for all researchers (at any level) to me committed to change, improve and evolve.
+![](summer mosaic.png) 
+![](snow mosaic.png) 
+## Personal reflection
+
+First of all, I was very excited to learn about the Google Earth Engine, as I had already some experience in previous works of visualizing and downloading somethings. It is fascinating to me how Google not only has the ability to collect this type of satellite data but also incorporate crowd sourcing and continuous community involvement in the improvement and enhancement of data.
+
+Now regarding the case study I found in Switzerland, I found the project very innovative and useful in how they were able to create detailed and clear images that still preserved all the key information. 
+
+Considering my context in Bogota, a city known for its challenges with cloud coverage and air pollution, the methodologies and technologies applied in this case study could be beneficial. Bogota faces unique environmental monitoring challenges due to its high altitude, frequent cloud cover, and urban pollution.
+
+By adapting the cloud-masking functions and quality band selection techniques demonstrated, we could generate high-quality, cloud-free mosaics of Bogota and its surroundings. These mosaics could play a crucial role in urban planning, environmental protection, and pollution control by providing accurate and up-to-date information on land cover, vegetation health, and the extent of pollution coverage.The project also emphasizes the importance of community engagement and the use of available resources and forums to improve and adapt the methodologies to local needs.
+
+Tying everything together with the Septima Verde case in Bogota, that I mentioned in Week 4, I feel that similar things could be done in my home city where there is alreadya lot of earch data, ground data and public-social collaboration. 
