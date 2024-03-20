@@ -1,4 +1,4 @@
-# Week 3 - Geometric and Atmospheric Correction
+# Geometric and Atmospheric Correction
 
 ## Summary
 

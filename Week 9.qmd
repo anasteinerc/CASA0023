@@ -1,6 +1,7 @@
-# Week 9 - Temperature and policy
+# Temperature and policy making
 
-**Overview:** 
+## Summary
+
 A critical issue in urban development is that of Urban Heat Islands (UHIs) and the interplay between urban temperature dynamics and public policy. UHIs result in higher urban temperatures compared to surrounding areas, posing significant challenges to urban living and environmental sustainability.
 
 A quick example of an Urban Heat Island is New York City, a heavily built-up area with much higher temperatures to its surrounding rural areas. According to the United State's Environmental Protection Agency, NYC's annual temperature is up to 3 Celsius degrees warmer than it's surrounding areas.
@@ -73,8 +74,7 @@ The resulting temperature map of Los Angeles reveals spatial variations in land 
 
 The MODIS LST map reveals the thermal landscape of Los Angeles, with urban areas distinctly warmer due to the urban heat island effect, as well as cooler regions corresponding to vegetated and coastal areas. The time series chart showcases the daily temperature fluctuations, providing insight into the dynamic nature of urban temperatures. These temperature patterns are crucial for urban planners and public health officials as they implement strategies to mitigate extreme heat and enhance urban livability. The ability to visualize and analyze temperature variations over time is a powerful tool in understanding and responding to the impacts of climate variability and urbanization.
 
-## Personal Reflection
-
+## Personal Reflection (edit!!!)
 
 Reflecting on this week's endeavors, it has been a period of substantial learning and appreciation for the intricacies of urban heat dynamics. Diving into the world of remote sensing, I’ve harnessed the power of satellite imagery to uncover the subtleties of the Urban Heat Island effect, a phenomenon that stands at the crossroads of urban development and climate resilience.
 
@@ -87,3 +87,15 @@ My interpretations of the data led me to understand the profound impact of urban
 This week's practical work has been more than just an academic exercise; it has been a window into the future of urban sustainability. It strikes me that while cities are often seen as culprits of climate change, they also hold the keys to combatting it. As someone interested in the nexus of environmental science and policy, the insights gained this week will undoubtedly inform my perspective on urban development and the essential role green infrastructure plays in it.
 
 The realization that satellites orbiting hundreds of miles above us can provide such detailed and actionable environmental data is awe-inspiring. It underscores the profound capabilities we hold in our hands, and the responsibilities we bear, to use this information wisely for the betterment of our urban environments and the health of our communities. This week's work is not an end but a beginning—a first step on a path to a deeper understanding and, hopefully, to meaningful action.
+
+## Bibliography
+
+Klinenberg, E., 1999. Denaturalizing Disaster: A Social Autopsy of the 1995 Chicago Heat Wave. Theory and Society 28, 239–295.
+
+Li, D., Newman, G.D., Wilson, B., Zhang, Y., Brown, R.D., 2022. Modeling the relationships between historical redlining, urban heat, and heat-related emergency department visits: An examination of 11 Texas cities. Environment and Planning B: Urban Analytics and City Science 49, 933–952.
+
+Nowak, D.J., Ellis, A., Greenfield, E.J., 2022. The disparity in tree cover and ecosystem service values among redlining classes in the United States. Landscape and Urban Planning 221, 104370.
+
+MacLachlan, A., Biggs, E., Roberts, G., Boruff, B., 2021. Sustainable City Planning: A Data-Driven Approach for Mitigating Urban Heat. Frontiers in Built Environment 6.
+
+Wilson, B., 2020. Urban Heat Management and the Legacy of Redlining. Journal of the American Planning Association 86, 443–457

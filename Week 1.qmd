@@ -3,11 +3,7 @@
 
 ## Summary
 
-This week was very introductory, ideal for people like me who have no previous knowledge of remote sensing and of what satellites actually do. We learnt the basic definition of what remote sensing is, then went through some theoretical explanations on the type of sensors used, as well as the different resolutions that have to be considered and manipulated (accordingly) to get the most optimal results. 
-
-In this week's diary entry I will start by briefly explaining the basics of remote sensing, to then show two real life examples that use different types of resolutions to solve different environmental and demographic issues. I end the chapter with my final reflection. 
-
-## Theory
+This week was very introductory, ideal for people like me who have no previous knowledge of remote sensing and of what satellites actually do. We learnt the basic definition of what remote sensing is, then went through some theoretical explanations on the type of sensors used, as well as the different resolutions that have to be considered and manipulated (accordingly) to get the most optimal results.
 
 ### What is it?
 Remote sensing, as defined by NASA, involves acquiring information from a distance, utilizing a variety of sensors on platforms like satellites, planes, and drones. Over 150 satellites and more than 27,000 devices in orbit provide a rich array of data sources such as Sentinel, LANDSAT, and SAR satellites, facilitating diverse applications from environmental monitoring to urban planning.
@@ -33,6 +29,8 @@ Remote sensing has four resolutions:
 **Radiometric:** The range of reflectance values that the sensor recognizes.
 
 There is a constant compensation between different resolutions to find a balance to get optimal data as needed. In the next section, you can see two different examples. 
+
+In this week's diary entry I will show two real life examples that use different types of resolutions to solve different environmental and demographic issues. I end the chapter with my final reflection. 
 
 ## Applications 
 The significance of remote sensing extends across various fields. It's instrumental in environmental monitoring, aiding in climate change research, deforestation tracking, and oceanography. Urban planning benefits from detailed land use and development data, while disaster response initiatives rely on immediate data for efficient management and recovery efforts.

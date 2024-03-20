@@ -1,34 +1,28 @@
 
-# Week 7 - Classification I
+# Classification I
 
-**Overview:** This week we learnt about classification techniques in remote sensing, essential for analyzing and monitoring phenomena like urban expansion, air pollution, and changes in land use and cover. These techniques, including machine learning and traditional methods, play a pivotal role in environmental management and urban planning.
+## Summary
+
+This week we learnt about classification techniques in remote sensing, essential for analyzing and monitoring phenomena like urban expansion, air pollution, and changes in land use and cover. These techniques, including machine learning and traditional methods, play a pivotal role in environmental management and urban planning.
 
 We covered a range of supervised machine learning tools – from simple linear regression to CART and Regression Trees. 
 
-## Applications of Classification in Remote Sensing
+### Applications of Classification in Remote Sensing
 
 - **Urban Expansion:** Tracking changes in urban areas using Landsat imagery.
 - **Air Pollution:** Monitoring pollution levels through satellite data.
 - **Land Use and Land Cover Changes:** Identifying changes over time to inform conservation and development strategies.
 - **Forest Dynamics:** Detecting illegal logging and forest degradation.
 
-## Importance of Preprocessing
+### Importance of Preprocessing
 
 Pre processing steps, such as noise reduction and normalization, are crucial for accurate classification outcomes. These steps ensure that the data accurately reflects ground conditions and improves the reliability of classification results.
 
-## Machine Learning 
+**Machine Learning:** Both machine learning and traditional classification methods are employed in remote sensing. Machine learning approaches, such as supervised and unsupervised learning, offer powerful tools for handling complex datasets, while traditional methods provide foundational techniques for image classification.
 
-Both machine learning and traditional classification methods are employed in remote sensing. Machine learning approaches, such as supervised and unsupervised learning, offer powerful tools for handling complex datasets, while traditional methods provide foundational techniques for image classification.
+**CART:** CART classifies or predicts outcomes by splitting the dataset into subsets through decision forks based on predictor variables. It aims to minimize variance within subsets for continuous data (via mean square error) and reduce impurity for categorical data (via Gini impurity). The process stops when it meets a predefined criterion to avoid overfitting (where the model fits the training data too closely) or underfitting (where the model is too simplistic).
 
-### CART 
-
-**Methodology:** CART classifies or predicts outcomes by splitting the dataset into subsets through decision forks based on predictor variables. It aims to minimize variance within subsets for continuous data (via mean square error) and reduce impurity for categorical data (via Gini impurity). The process stops when it meets a predefined criterion to avoid overfitting (where the model fits the training data too closely) or underfitting (where the model is too simplistic).
-
-### Random Forest 
-
-**Methodology:** Random Forest improves upon the decision tree method by creating an ensemble of trees, each derived from a subset of the training data. It combines the outcomes of these trees to make a final prediction, enhancing reliability and accuracy by overcoming biases and variances of individual trees.
-
-While CART provides a direct and intuitive approach to splitting data for classification or regression, it is prone to overfitting if not properly managed. Random Forest, by aggregating predictions from multiple decision trees, offers a solution to the limitations of individual trees, such as overfitting, by producing more stable and accurate predictions.
+**Random Forest:** Random Forest improves upon the decision tree method by creating an ensemble of trees, each derived from a subset of the training data. It combines the outcomes of these trees to make a final prediction, enhancing reliability and accuracy by overcoming biases and variances of individual trees.
 
 ## Application of Random Forest
 
@@ -48,5 +42,17 @@ The limitation that I find, as with any statistics and data analysis, is the pot
 
 The second thing that excited me was the application example that I found, not only because it is in Colombia, but specifically in the Pacific region's mangrove which is one the most vulnerable and important ecosystems we have. I have worked with this ecosystem many years, regarding sustainable agriculture and fishing, as well as incorporating it into sustainable tourism. Now, being able to study about it but from a sensor perspective just inspires me to do these types of analysis even more. 
 
-It also reinforced my interest and need to advocate for the conservation of these types of ecosystems, because of the importance they have on food security, global warming reduction, biodiversity, carbon reduction, etc. Being able to monitor it, in such a detailed manner, is extremely important to actually measure its reduction, and be able to mitigate its potential risks.  
+It also reinforced my interest and need to advocate for the conservation of these types of ecosystems, because of the importance they have on food security, global warming reduction, biodiversity, carbon reduction, etc. Being able to monitor it, in such a detailed manner, is extremely important to actually measure its reduction, and be able to mitigate its potential risks. 
+
+## Bibliography 
+
+Jensen, J.R., 2015. Introductory digital image processing: a remote sensing perspective. Prentice-Hall Inc.
+
+Cloud-Based Remote Sensing with Google Earth Engine (accessed 1.5.23).
+
+Pal, M., Mather, P.M., 2005. Support vector machines for classification in remote sensing. International Journal of Remote Sensing 26, 1007–1011.
+
+GISGeography, 2014. Image Classification Techniques in Remote Sensing (accessed 1.5.23).
+
+Barsi, Á., Kugler, Z., László, I., Szabó, G., Abdulmutalib, H., 2018. Accuracy dimensions in remote sensing. International Archives of the Photogrammetry, Remote Sensing & Spatial Information Sciences 42.
 
