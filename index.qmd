@@ -1,6 +1,6 @@
 # About me
 
-Hello to all. I am Ana.
+Hello to all. I am Ana. Welcome to my Personal Diary, where I will share everything I learnt and though about while learning about "Remote Sensing: Cities and Environments". 
 
 ![Optional Image Caption](foto ana.jpg)
 
@@ -9,3 +9,5 @@ I am very interested in understanding socio-cultural, economic and environmental
 I studied anthropology for my undergrad and later finished an MSc in Sustainable Development, currently I am studying an MSc in Social and Geographic Data Science. I have more than 8 years of experience working in rural development in Colombia, analyzing and developing different economic activities that contribute to both cultural and environmental conservation, as well as coordinating efforts with regional governments, NGO's and the environmental sector.
 
 My expectation with this masters, and this specific course, is to acquire as many tools and skills in social and environmental data collection and analysis, that will permit me to continue designing, implementing and evaluating development projects and programs.
+
+I hope that this diary motivates you as well, to learn more about Remote Sensing and to apply it in your respective fields.

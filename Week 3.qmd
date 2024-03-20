@@ -1,6 +1,10 @@
 # Week 3 - Geometric and Atmospheric Correction
 
-## **What is it?**
+## Summary
+
+The subject this week was correction and different ways in which we could edit, improve and enhance images to better suit the specific analysis that we want. It was a very technical and scientific week. For this week diary entry, I will start with a quick summary of the technical definitions and processes that I learnt, and then I have decided to go into detail on the practical that we did in class in which we applied Grey Level Co-Occurence Matrix to correct the texture of an image, as well as analyse a real world case in Colombia where this methodology was also used.I finish this entry with my personal reflections. 
+
+### **What is it, and why is it important?**
 
 Just like any data recollection tool, Satellites are not always accurate and need some sort of correction or enhancements to improve the images they gather. The distortions can be caused by many things such as wrong view angles, harsh variations in topography, strong winds, or other climactic conditions such as rain or snow. 
 
@@ -8,64 +12,68 @@ Geometric correction is the process in which satellite imagery is corrected. Eac
 
 There are many different types of correction and enhancement.I will get into further detail about Dark Object Substraction.
 
-![](correction.png)
+![](correction.png)(https://www.mdpi.com/2072-4292/15/16/3965)
 
-## **Dark Object Substraction (DOS)**
+### **Types of Correction**
 
-### Definition:
-Dark Object Subtraction (DOS) is a correction technique that assumes the darkest pixel in an image should ideally have a value of 0, attributing any existing value to atmospheric interference. 
+Radiometric: Correcting the digital number to reflectance. Different uses of sensors result in different known values.
 
-### Use:
-DOS is utilized to correct satellite or any raw imagery data, by compensating for atmospheric haze or scatter radiance. This correction is crucial for applications requiring precise surface reflectance measurements, such as environmental monitoring, land use analysis, and vegetation mapping.
+Geometric: Deals with data distortion.Requires input to ortho-refortify using control points and DEM (Digital Elevation Model).
 
-### Methodology:
-- Acquisition of Raw Satellite Imagery: Use raw satellite imagery in DN format.
-- Merging of multiple tiles: Landsat tiles are organized using a Worldwide Reference System based on PATH (columns) and ROWS, but these tiles might not align perfectly with administrative boundaries. For comprehensive coverage, such as for Cape Town, two or possibly three Landsat tiles might be needed. The merging process involves downloading two (or more) satellite tiles that are temporally close and have minimal cloud cover, preferably from Landsat Collection 2, Level 2 for surface reflectance data.Merging is done by loading the selected tiles into a software environment (e.g., using terra in R) and combining them using functions like terra::mosaic(), aiming for a seamless representation of the study area.
-- Identification of the Haze Value: Compute the haze value for each band (up to NIR), representing the atmospheric radiance. Select the darkest pixels (indicative of shadows or water) and assuming a minimal reflectance value, often 1%, to approximate the amount of radiance attributed to atmospheric conditions.
-- Conversion of DN to Radiance: Apply a regression equation to transform DN values to at-sensor radiance, which reflects the actual light measured by the satellite sensor.
-- Application of DOS Correction: Subtract the calculated 1% reflectance value from the radiance values to adjust for atmospheric effects. This process is based on the assumption that most natural surfaces have some level of reflectance rather than being completely dark.
-- Final Computation for Reflectance: Utilize the DOS formula to compute the corrected surface reflectance, accounting for factors like the solar zenith angle and Earth-sun distance, which are derived from satellite metadata and standard constants.
+Atmospheric: Corrects for atmospheric effects on sensor data. Involves local and empirical methods.
 
-## **Types of Enhancement**
+Orthorectification: Involves forcing a view to be correct as if viewed from above.
+
+### **Methods for Enhancement**
 
 Allthough there are many types of enhancement that can be done to satellite imaging, I will talk about just a few:
 
 **Ratio:**
 Rationing involves calculating the difference between two spectral bands to highlight specific landscape features. The Normalized Difference Vegetation Index (NDVI) is a common example, exploiting the spectral trait where healthy vegetation reflects more in the Near-Infrared (NIR) but absorbs in the Red wavelength. This method is useful for identifying areas with healthy vegetation.
 
-![](Screenshot 2024-03-11 114906.png)
+![](Screenshot 2024-03-11 114906.png)(https://www.researchgate.net/publication/342413913_Testing_the_Multiple_Pathways_of_Residential_Greenness_to_Pregnancy_Outcomes_Model_in_a_Sample_of_Pregnant_Women_in_the_Metropolitan_Area_of_Donostia-San_Sebastian)
 
 **Filtering:**
 Filtering applies moving window operations to data, which can enhance or suppress certain features. An example is the Laplacian filter, used to highlight edges or contrast in the imagery, thus aiding in feature identification and analysis.
 
-![](Screenshot 2024-03-11 115243.png)
-
 **Texture**
 Texture Analysis focuses on the pixel-to-pixel relationships within an image to describe surface characteristics. This technique is valuable for distinguishing between different land cover types based on their texture, such as smooth grassland or bumpy deciduous forests.
 
-![](texture correction.png)
+![](texture correction.png)(https://www.researchgate.net/publication/346042476_STAIR_20_A_Generic_and_Automatic_Algorithm_to_Fuse_Modis_Landsat_and_Sentinel-2_to_Generate_10_m_Daily_and_Cloud-Gap-Free_Surface_Reflectance_Product)
 
-## **Application of GLCM Method**
+**Joining Data**
+Preprocessing steps performed on collected data. Methods include enhancement, feature extraction, etc.
+
+**Feathering**
+When you join two matching images together. Creates a seamless image without harsh boundaries.
+
+**Mosaicking**
+Images are pieced together to form one large image.
+
+## **In class-application of GLCM Method**
 
 One of the practical exercises this week, was to use the GLCM package in R Studio to correct the texture in some satellite imagery. 
 
 The GLCM method is used to extract statistical measures from satellite images that can help differentiate between different land cover types based on their texture, such as distinguishing forests from urban areas. 
 
-The GLCM package in R facilitates texture analysis by computing a matrix where the frequency of co-occurring pixel values at a certain spatial relationship is recorded. This matrix is then used to calculate various texture statistics that describe the heterogeneity or patterns within the image. 
+The GLCM package facilitates texture analysis by computing a matrix where the frequency of co-occurring pixel values at a certain spatial relationship is recorded. This matrix is then used to calculate various texture statistics that describe the heterogeneity or patterns within the image. 
 
 - The size of the moving window determines how large an area each calculation considers. A window of size (7, 7) means that for each pixel, the texture is analyzed based on its 7x7 neighbors.
 - The shift parameter defines the spatial relationship between pixel pairs considered in the GLCM. It's essentially the direction and distance between the pair of pixels. 
 - The GLCM package can compute various texture measures such as homogeneity, contrast, and correlation. These measures provide quantitative data on the texture's smoothness, variation, and spatial dependency among pixels. The choice of statistics will depend on the aspect of texture you are interested in analyzing.
-- GLCM functions require raster layers from the raster package as input. Therefore, data must be converted into a raster layer format before applying GLCM texture analysis.
-
-![](homogeneity.png)
 
 Interpretation of results:
-- Color Scale: The bar on the right represents the scale of homogeneity values, typically ranging from 0 to 1. A value closer to 1 indicates high homogeneity, meaning the texture is very uniform in that area. Values closer to 0 suggest low homogeneity, where the texture is less uniform and more varied.
+- Color Scale: A value closer to 1 indicates high homogeneity, meaning the texture is very uniform in that area. Values closer to 0 suggest low homogeneity, where the texture is less uniform and more varied.
 - Color Representation: The colors in the image correspond to the homogeneity values at each location. For example, areas colored in green might indicate regions of higher homogeneity, while yellow to pink areas might represent lower homogeneity.
 - Spatial Distribution: The distribution of colors across the plot shows how homogeneity varies spatially. Clusters of similar colors indicate areas with similar texture properties. For example, large green areas would be more uniform in texture, possibly open fields or water bodies, while mixed colors like yellow and pink could suggest urban or forested areas with more complex structures.
 
-## **Personal Reflection:**
+## Real world application
+
+While searching for a real life application of this methodology, I found this investigation done in Colombia, specifically in the lower Magdalena river region. It was a very innovative study in which they integrated both Sentinel-1 and Sentinel-2 data to improve the spectral quality in their land cover images. They implemented various correction methodologies as well as more advanced machine learning processes, their objective was to tackle the cloud coverage which always affects imaging in this region of the world. They were very successful in classifying land cover which is a great advance for natural resource management and climate change adaptation, one of Colombia's environmental pillars. 
+
+The scientific journal mentions that within their methodologies, GLCM was used in a to enhance land cover mapping in Colombia. 
+
+## Personal Reflection:
 
 If one is going to learn about remote sensing data, one must also learn about how to correct and enhance the images and data. These techniques make sure that the pictures and data we get from satellites will really show what's happening on Earth. 
 
@@ -73,6 +81,16 @@ As an anthropologist, working in environmental conservation and rural developmen
 
 I really enjoyed applying the GLCM method because it provided key insights into the spatial arrangement of pixel values. This could easily be used for land cover classification, environmental monitoring, and urban planning, where understanding the texture is crucial for accurate analysis.This is something that I in-vision myself using in my personal and professional interests.
 
+It was fascinating for me to read the scientific journal of scientists applying what I had applied in a practical, in a real life case of improving image quality to be able to identify and characterise land cover and vegetation. 
+
+## Bibliography
+
+1. Anabitarte, Asier, et al. “Testing the Multiple Pathways of Residential Greenness to Pregnancy Outcomes Model in a Sample of Pregnant Women in the Metropolitan Area of Donostia-San Sebastián.” International Journal of Environmental Research and Public Health, vol. 17, no. 12, 23 June 2020, p. 4520, pubmed.ncbi.nlm.nih.gov/32586011/, https://doi.org/10.3390/ijerph17124520.
+2. Clerici, Nicola, et al. “Fusion of Sentinel-1A and Sentinel-2A Data for Land Cover Mapping: A Case Study in the Lower Magdalena Region, Colombia.” Journal of Maps, vol. 13, no. 2, 12 Sept. 2017, pp. 718–726, https://doi.org/10.1080/17445647.2017.1372316.
+3. Joyce, K., 2013. Radiative transfer and atmospheric correction video
+4. Jensen, J.R., 2015. Introductory digital image processing: a remote sensing perspective. Prentice-Hall Inc.
+5. Oh, Myeongchan, et al. “Real-Time Terrain Correction of Satellite Imagery-Based Solar Irradiance Maps Using Precomputed Data and Memory Optimization.” Remote Sensing, vol. 15, no. 16, 1 Jan. 2023, p. 3965, www.mdpi.com/2072-4292/15/16/3965, https://doi.org/10.3390/rs15163965. Accessed 20 Mar. 2024.
+6. Young, Peter, et al. “From Image Descriptions to Visual Denotations: New Similarity Metrics                     for Semantic Inference over Event Descriptions.” Transactions of the Association for Computational Linguistics, vol. 2, Dec. 2014, pp. 67–78, https://doi.org/10.1162/tacl_a_00166. Accessed 10 Apr. 2020.
 
 
 
