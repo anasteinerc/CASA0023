@@ -14,15 +14,13 @@ We covered a range of supervised machine learning tools – from simple linear r
 - **Land Use and Land Cover Changes:** Identifying changes over time to inform conservation and development strategies.
 - **Forest Dynamics:** Detecting illegal logging and forest degradation.
 
-### Importance of Preprocessing
-
-Pre processing steps, such as noise reduction and normalization, are crucial for accurate classification outcomes. These steps ensure that the data accurately reflects ground conditions and improves the reliability of classification results.
-
 **Machine Learning:** Both machine learning and traditional classification methods are employed in remote sensing. Machine learning approaches, such as supervised and unsupervised learning, offer powerful tools for handling complex datasets, while traditional methods provide foundational techniques for image classification.
 
 **CART:** CART classifies or predicts outcomes by splitting the dataset into subsets through decision forks based on predictor variables. It aims to minimize variance within subsets for continuous data (via mean square error) and reduce impurity for categorical data (via Gini impurity). The process stops when it meets a predefined criterion to avoid overfitting (where the model fits the training data too closely) or underfitting (where the model is too simplistic).
 
 **Random Forest:** Random Forest improves upon the decision tree method by creating an ensemble of trees, each derived from a subset of the training data. It combines the outcomes of these trees to make a final prediction, enhancing reliability and accuracy by overcoming biases and variances of individual trees.
+
+**Image Classification:** It is the process where images are categorised into one or more classes based on their content. There are two method types for this, supervised (selecting training samples, training the classifier, applying it to classify whole dataset) and unsupervised (Algorithms automatically segment input data into clusters based on inherent patterns/data similarities).
 
 ## Application of Random Forest
 
@@ -32,7 +30,7 @@ Employing Synthetic Aperture Radar (SAR) data from ALOS-2/PALSAR-2, SRTM, NASADE
 
 The study's methodology involved preprocessing of satellite data, model evaluation, and comparison, with a particular emphasis on the Random Forest algorithm for its exceptional accuracy. The generation of an AGB map, indicating mean biomass values across various classes, demonstrates the significant variability in biomass and the model's capability to capture these differences.This approach contributes valuable insights for the management and conservation of mangrove ecosystems, vital for climate change mitigation and the protection of biodiversity and local livelihoods.
 
-![](fandom forest.jpg) 
+![](fandom forest.jpg)(https://www.sciencedirect.com/science/article/pii/S2405844023079537) 
 
 ## Personal reflection
 
@@ -46,13 +44,14 @@ It also reinforced my interest and need to advocate for the conservation of thes
 
 ## Bibliography 
 
-Jensen, J.R., 2015. Introductory digital image processing: a remote sensing perspective. Prentice-Hall Inc.
+1. Barsi, Á., Kugler, Z., László, I., Szabó, G., Abdulmutalib, H., 2018. Accuracy dimensions in remote sensing. International Archives of the Photogrammetry, Remote Sensing & Spatial Information Sciences 42.
+2. Cloud-Based Remote Sensing with Google Earth Engine (accessed 1.5.23).
+3. GISGeography, 2014. Image Classification Techniques in Remote Sensing (accessed 1.5.23).
+4. Jensen, J.R., 2015. Introductory digital image processing: a remote sensing perspective. Prentice-Hall Inc.
+5. John Josephraj Selvaraj, and Bryan Ernesto. “Estimating Mangrove Aboveground Biomass in the Colombian Pacific Coast: A Multisensor and Machine Learning Approach.” Heliyon, vol. 9, no. 11, 1 Nov. 2023, pp. e20745–e20745, https://doi.org/10.1016/j.heliyon.2023.e20745. Accessed 10 Jan. 2024.
+6. Pal, M., Mather, P.M., 2005. Support vector machines for classification in remote sensing. International Journal of Remote Sensing 26, 1007–1011.
 
-Cloud-Based Remote Sensing with Google Earth Engine (accessed 1.5.23).
 
-Pal, M., Mather, P.M., 2005. Support vector machines for classification in remote sensing. International Journal of Remote Sensing 26, 1007–1011.
 
-GISGeography, 2014. Image Classification Techniques in Remote Sensing (accessed 1.5.23).
 
-Barsi, Á., Kugler, Z., László, I., Szabó, G., Abdulmutalib, H., 2018. Accuracy dimensions in remote sensing. International Archives of the Photogrammetry, Remote Sensing & Spatial Information Sciences 42.
 
