@@ -1,24 +1,26 @@
-# Temperature and policy making
+# Temperature and Urban Heat Islands
 
 ## Summary
 
-A critical issue in urban development is that of Urban Heat Islands (UHIs) and the interplay between urban temperature dynamics and public policy. UHIs result in higher urban temperatures compared to surrounding areas, posing significant challenges to urban living and environmental sustainability.
+This week we talked about the critical issue in urban development that is Urban Heat Islands (UHIs) and the interplay between urban temperature dynamics and public policy. UHIs result in higher urban temperatures compared to surrounding areas, posing significant challenges to urban living and environmental sustainability.
 
 A quick example of an Urban Heat Island is New York City, a heavily built-up area with much higher temperatures to its surrounding rural areas. According to the United State's Environmental Protection Agency, NYC's annual temperature is up to 3 Celsius degrees warmer than it's surrounding areas.
 
-![](nyc.jpg) 
-
-## Urban Heat Island Effect
+![](nyc.jpg)(https://serc.carleton.edu/details/images/10925.html) 
 
 Urban areas experience elevated temperatures due to factors such as heat-retaining surfaces (concrete and paved roads), industrial activities, scarce green spaces, and pollutants. This phenomenon exacerbates heat waves, impacts human health, and increases energy demand for cooling. This becomes into a vicious never-ending cycle.
 
-This urban heating has drastic consequences over humans and natural environments:
-- Heat waves are the deadliest urban phenomenon in urban cities.
-- The increase in urban heat has direct implications over the general heat of surrounding natural hubs, which start to degrade.
-
 This is becoming not only a dangerous phenomenon but also expensive, as cities are investing more and more on greener energies, in more green areas, in changing economic and social behaviors, and in general being more heat and energy efficient.
 
-## **Policies**
+Remote sensing technologies, particularly satellite imagery, play a crucial role in addressing urban heat island (UHI) effects. Satellites like Landsat are at the forefront of monitoring these temperature disparities, offering critical insights into urban climate dynamics.They provide comprehensive data on land cover and land use changes over time, enabling the identification of areas contributing most significantly to UHI effects. 
+
+This capability is essential for urban planners and environmental scientists looking to pinpoint specific urban sectors that may require green infrastructure interventions, such as increased vegetation or reflective materials, to mitigate heat absorption.
+
+MODIS sensoring, on the other hand, stands out due to its high temporal resolution, capturing 1-2 images daily for almost any location on the globe. This frequent data collection is invaluable for tracking temperature variations over short intervals, allowing for near-real-time monitoring of UHI effects and the effectiveness of mitigation strategies implemented to combat them. The ability of MODIS to provide daily temperature data supports efforts to understand how urban heat fluctuates with changing weather patterns, urban development, and seasonal changes, providing a dynamic view of the urban climate.
+
+Together, the detailed land cover data from Landsat and the high-frequency temperature data from MODIS offer a comprehensive toolkit for detecting, understanding, and monitoring UHI effects. 
+
+### Policies
 
 To combat UHIs effectively, policies must encompass a broad spectrum of urban planning and design strategies. This involves the integration of green infrastructure, such as parks, green roofs, and urban forests, which can provide shade and reduce surface temperatures through evapotranspiration. Reflective materials for buildings and pavements can deflect sunlight and decrease heat absorption. Enhancing urban ventilation can also play a significant role in reducing UHIs, facilitating the natural cooling of urban areas.
 
@@ -26,13 +28,7 @@ Additionally, policies should encourage the use of sustainable transportation op
 
 Addressing UHIs requires comprehensive policy strategies, including the promotion of green infrastructure, reflective building materials, and enhanced urban planning to increase ventilation and shade. These measures can mitigate the effects of UHIs, improving urban resilience and sustainability.
 
-### **Policy at a Global level**
-
-At the global level, initiatives like the New Urban Agenda, Sustainable Development Goals (SDGs), and resources such as the Beat The Heat Handbook offer frameworks and guidelines for tackling UHIs through sustainable urban development practices.
-
-New Urban Agenda: Adopted at the United Nations Conference on Housing and Sustainable Urban Development (Habitat III) in 2016, the New Urban Agenda provides a roadmap for building cities that can accommodate future growth in a sustainable, resilient, and inclusive way. It emphasizes the need for green public spaces, sustainable mobility, and environmentally sustainable and resilient urban development.
-
-Sustainable Development Goals (SDGs): Specifically, SDG 11 focuses on making cities and human settlements inclusive, safe, resilient, and sustainable. Addressing UHIs fits within this goal by promoting sustainable urban design and infrastructure that contribute to cooler urban environments. Implementing UHI mitigation strategies aligns with achieving several targets under SDG 11.
+Policies can range from local and regional urbanistic projects or urban planning, as well as national and international agendas and commitments such as the Sustainable Development Goals. 
 
 ### **Local Policy - Medellin's Corredor Verde**
 
@@ -46,56 +42,36 @@ Medellín's approach to combating urban heat and improving environmental quality
 
 **Results:** The implementation of green corridors has led to a noticeable 2°C reduction in temperature across the city, alongside potential improvements in air quality and biodiversity. Early studies and observations suggest the project has been effective in absorbing pollutants and reducing CO2 emissions, though comprehensive data on pollution reduction is still forthcoming.
 
-![](medellin 1.jpg) 
+![](medellin 1.jpg)(https://lapoliticambiental.com.ar/contenido/4252/colombia-medellin-logro-reducir-el-calor-con-corredores-verdes)
 
 **Conclusions:** Medellín's Green Corridors project exemplifies how nature-based solutions can address urban environmental challenges, offering a replicable model for other cities. Its success highlights the importance of community support, innovative planning, and the integration of green spaces in urban design to create climate-resilient and sustainable cities. The project's popularity and effectiveness have inspired other Colombian cities and regions like São Paulo to adopt similar initiatives, underlining the potential of green corridors as a global urban strategy against the impacts of climate change.
 
-## Remote Sensing
-
-Remote sensing technologies, particularly satellite imagery, play a crucial role in addressing urban heat island (UHI) effects, a phenomenon where urban regions experience significantly higher temperatures than their rural counterparts due to human activities and the prevalence of surfaces that absorb and retain heat. Satellites like Landsat and the Moderate Resolution Imaging Spectroradiometer (MODIS) are at the forefront of monitoring these temperature disparities, offering critical insights into urban climate dynamics.
-
-Landsat satellites, with their detailed spatial resolution, provide comprehensive data on land cover and land use changes over time, enabling the identification of areas contributing most significantly to UHI effects. This capability is essential for urban planners and environmental scientists looking to pinpoint specific urban sectors that may require green infrastructure interventions, such as increased vegetation or reflective materials, to mitigate heat absorption.
-
-MODIS, on the other hand, stands out due to its high temporal resolution, capturing 1-2 images daily for almost any location on the globe. This frequent data collection is invaluable for tracking temperature variations over short intervals, allowing for near-real-time monitoring of UHI effects and the effectiveness of mitigation strategies implemented to combat them. The ability of MODIS to provide daily temperature data supports efforts to understand how urban heat fluctuates with changing weather patterns, urban development, and seasonal changes, providing a dynamic view of the urban climate.
-
-Together, the detailed land cover data from Landsat and the high-frequency temperature data from MODIS offer a comprehensive toolkit for detecting, understanding, and monitoring UHI effects. These insights enable targeted interventions, such as the strategic placement of green spaces or the implementation of cool roofs, to reduce urban temperatures and improve the livability of cities facing the challenges of climate change and urbanization.
-
-## Class practical 
+## Application - Class practical 
 
 **Methodology:**
 To assess the land surface temperatures (LST) in Los Angeles, we utilized the Google Earth Engine platform and processed Landsat 8 Collection 2 Level 2 data. The Landsat images were filtered for a summer period from June to August 2022, focusing on days with less than 10% cloud cover to ensure clear-sky conditions. A custom script was applied to convert the raw thermal band (ST_B10) data into Celsius using the appropriate scale factors (0.00341802 and -273.15 for conversion to Celsius). We then masked out non-physical temperature values (less than 0 Celsius) and calculated the mean temperature across the filtered image collection to generate a single temperature map. This mean temperature map was clipped to the geographic boundaries of Los Angeles, defined by a specified set of coordinates, and visualized using a color palette ranging from cool (blue) to warm (red) temperatures.
 
 The MODIS data from both the Aqua and Terra satellites were processed to provide a comprehensive analysis of the land surface temperatures over Los Angeles. After loading the respective image collections, we applied a scale factor of 0.02 and converted the LST from Kelvin to Celsius. Subsequently, the datasets from both satellites were merged to calculate the mean temperature, ensuring a robust dataset by combining morning and afternoon observations. The resulting mean temperature data was clipped to the Los Angeles region and visualized on the map with a color gradient representing the temperature range. Additionally, a time series chart was generated to illustrate the LST variation over the selected summer period.
 
-![](Screenshot 2024-03-13 122328.png)
-![](Screenshot 2024-03-13 125617.png)
+![Screen shots from by practical](Screenshot 2024-03-13 122328.png)
+![Screen shots from by practical](Screenshot 2024-03-13 125617.png)
 **Interpretations:**
 The resulting temperature map of Los Angeles reveals spatial variations in land surface temperatures during the summer period. Warmer temperatures, depicted in red, are prominent in urbanized and densely built-up areas, suggesting an urban heat island effect where human-made surfaces absorb and re-radiate heat more than natural landscapes. Cooler areas, shown in blue, typically correspond to vegetated regions, water bodies, and higher elevations that are known to influence local climate conditions. The minimum and maximum temperatures extracted from the data indicate a range of observed temperatures and help in identifying the extent of temperature variation across different land cover types. These insights can inform urban planning initiatives aimed at mitigating heat-related risks and enhancing the city's climate resilience.
 
 The MODIS LST map reveals the thermal landscape of Los Angeles, with urban areas distinctly warmer due to the urban heat island effect, as well as cooler regions corresponding to vegetated and coastal areas. The time series chart showcases the daily temperature fluctuations, providing insight into the dynamic nature of urban temperatures. These temperature patterns are crucial for urban planners and public health officials as they implement strategies to mitigate extreme heat and enhance urban livability. The ability to visualize and analyze temperature variations over time is a powerful tool in understanding and responding to the impacts of climate variability and urbanization.
 
-## Personal Reflection (edit!!!)
+## Personal Reflection
 
-Reflecting on this week's endeavors, it has been a period of substantial learning and appreciation for the intricacies of urban heat dynamics. Diving into the world of remote sensing, I’ve harnessed the power of satellite imagery to uncover the subtleties of the Urban Heat Island effect, a phenomenon that stands at the crossroads of urban development and climate resilience.
+This was one of my favorite weeks, because of both the technical subject as well as all the practical implications of it. In other weeks, we had talked about very technical processes and methodologies and how they can be applied to solve different problematic. This week was the opposite, we centered on a problematic that is Urban Heating Islands and their economic and environmental implications, and then talked about how remote sensing can be used to measure and mitigate this phenomenon. I found this approach much more easier for me to understand, also much more inspiring. 
 
-Using the Google Earth Engine platform, I have been able to process and analyze Landsat 8 and MODIS data, converting raw thermal readings into actionable insights. By meticulously filtering images to capture the essence of Los Angeles's summer heat and transforming data to visualize the landscape of urban temperature, I have crafted a narrative that speaks to both the severity of urban heat and the potential pathways for mitigation.
-
-The methodology I adopted was thorough and aimed at precision. It was fascinating to see how the urban matrix, replete with its concrete and steel, translated into warmer reds on my temperature map, while the cooler blues revealed the presence of nature's mitigating touch in the form of water bodies and green spaces. The time series analysis brought a temporal dimension to the data, allowing me to track the ebb and flow of heat over the bustling city.
-
-My interpretations of the data led me to understand the profound impact of urban planning on city temperatures. The LST maps and time series charts not only told a story of current conditions but also hinted at the potential for policy interventions to forge a cooler, more sustainable urban future. It is a powerful reminder of how intertwined our actions and the environment truly are.
-
-This week's practical work has been more than just an academic exercise; it has been a window into the future of urban sustainability. It strikes me that while cities are often seen as culprits of climate change, they also hold the keys to combatting it. As someone interested in the nexus of environmental science and policy, the insights gained this week will undoubtedly inform my perspective on urban development and the essential role green infrastructure plays in it.
-
-The realization that satellites orbiting hundreds of miles above us can provide such detailed and actionable environmental data is awe-inspiring. It underscores the profound capabilities we hold in our hands, and the responsibilities we bear, to use this information wisely for the betterment of our urban environments and the health of our communities. This week's work is not an end but a beginning—a first step on a path to a deeper understanding and, hopefully, to meaningful action.
+Using the Google Earth Engine platform for the practical exercise, I have been able to process and analyze Landsat 8 and MODIS data, converting raw thermal readings into actionable insights. By filtering images to capture the essence of Los Angeles's summer heat and transforming data to visualize the landscape of urban temperature, I had an initial immersion to these types of land surface temperature analysis. 
 
 ## Bibliography
 
-Klinenberg, E., 1999. Denaturalizing Disaster: A Social Autopsy of the 1995 Chicago Heat Wave. Theory and Society 28, 239–295.
-
-Li, D., Newman, G.D., Wilson, B., Zhang, Y., Brown, R.D., 2022. Modeling the relationships between historical redlining, urban heat, and heat-related emergency department visits: An examination of 11 Texas cities. Environment and Planning B: Urban Analytics and City Science 49, 933–952.
-
-Nowak, D.J., Ellis, A., Greenfield, E.J., 2022. The disparity in tree cover and ecosystem service values among redlining classes in the United States. Landscape and Urban Planning 221, 104370.
-
-MacLachlan, A., Biggs, E., Roberts, G., Boruff, B., 2021. Sustainable City Planning: A Data-Driven Approach for Mitigating Urban Heat. Frontiers in Built Environment 6.
-
-Wilson, B., 2020. Urban Heat Management and the Legacy of Redlining. Journal of the American Planning Association 86, 443–457
+1. Colombia: Medellín Logró Reducir El Calor Con Corredores Verdes.” La Política Ambiental, 8 Oct. 2023, lapoliticambiental.com.ar/contenido/4252/colombia-medellin-logro-reducir-el-calor-con-corredores-verdes. Accessed 21 Mar. 2024.
+2. Klinenberg, E., 1999. Denaturalizing Disaster: A Social Autopsy of the 1995 Chicago Heat Wave. Theory and Society 28, 239–295.
+3. Li, D., Newman, G.D., Wilson, B., Zhang, Y., Brown, R.D., 2022. Modeling the relationships between historical redlining, urban heat, and heat-related emergency department visits: An examination of 11 Texas cities. Environment and Planning B: Urban Analytics and City Science 49, 933–952.
+4. MacLachlan, A., Biggs, E., Roberts, G., Boruff, B., 2021. Sustainable City Planning: A Data-Driven Approach for Mitigating Urban Heat. Frontiers in Built Environment 6.
+5. Nowak, D.J., Ellis, A., Greenfield, E.J., 2022. The disparity in tree cover and ecosystem service values among redlining classes in the United States. Landscape and Urban Planning 221, 104370.
+6. Satellite Image of Temp and Vegetation of NYC.” Serc.carleton.edu, serc.carleton.edu/details/images/10925.html. Accessed 21 Mar. 2024.
+7. Wilson, B., 2020. Urban Heat Management and the Legacy of Redlining. Journal of the American Planning Association 86, 443–457
