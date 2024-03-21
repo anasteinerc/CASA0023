@@ -3,32 +3,27 @@
 
 ## Summary
 
-For Week 8 we went deeper into classification in remote sensing, addressing big questions such as accuracy assessment, and exploring new classification approaches like OBIA and sub-pixel analysis. 
+For this week, we went deeper into classification in remote sensing, addressing big questions such as accuracy assessment, and exploring new classification approaches like OBIA and sub-pixel analysis. Since the topics where so scientific and dense, I will start the diary with some theoretical explanations before diving into the application and personal reflection.
 
 ### Advanced Classification Concepts
 
-- **Innovative Approaches:** Introduction to OBIA and sub-pixel analysis, which offer more nuanced insights into land cover and land use data.
-- **Accuracy Assessment:** A critical component of the classification process, ensuring that the results are reliable and applicable for decision-making.
+**Sub-pixel Analysis**: This technique focuses on the intricate details within each pixel to determine land cover types. By comparing the reflectance values of a pixel to the 'ideal' values for each land cover class, it infers the dominant land cover based on probability. In instances where a singular pixel may be composed of various different land cover types, sub-pixel analysis can be used to support classification efforts. This technique is used to estimate the fraction of each pixel that is covered by different materials/land cover types. 
 
-**Sub-pixel Analysis**: This technique focuses on the intricate details within each pixel to determine land cover types. By comparing the reflectance values of a pixel to the 'ideal' values for each land cover class, it infers the dominant land cover based on probability. 
+**Object-based Image Analysis (OBIA):** OBIA takes a holistic approach, clustering similar pixels into 'super pixels' to analyze land cover. It is used to identify natural and urban areas. You divide the image into meaningful objects instead of using traditional pixels, and through Linear Iterative Clustering you calculate the distance from other neighboring pixels. 
 
-**Object-based Image Analysis (OBIA):** OBIA takes a holistic approach, clustering similar pixels into 'super pixels' to analyze land cover. It is used to identify natural and urban areas.
+- **Accuracy Assessment:** A critical component of the classification process, ensuring that the results are reliable and applicable for decision-making. Accuracy is key in evaluating these models, with common measures including user's accuracy (precision), producer's accuracy (recall), and the F1 score, all derived from a confusion matrix. These metrics help quantify the reliability and representation of the classification results.
 
-### Accuracy Assessments
-
-Accuracy is key in evaluating these models, with common measures including user's accuracy (precision), producer's accuracy (recall), and the F1 score, all derived from a confusion matrix. These metrics help quantify the reliability and representation of the classification results.
-
-## Example of Application - Lake Baikal Basin
+## Application - Lake Baikal Basin
 
 A study conducted by Kai Li and colleagues, "Deep learning empowers the Google Earth Engine for automated water extraction in the Lake Baikal Basin", introduces a novel approach using deep learning within the Google Earth Engine (GEE) for efficient and automated water body extraction in the Lake Baikal Basin, the world's largest freshwater lake by volume. Facing the challenge of accurately acquiring large-scale, long-term data across the bi-national basin of Russia and Mongolia, the researchers combine local deep learning training with GEE's cloud-based computing to imbue the platform with the necessary computational power for deep learning tasks. By selecting features sensitive to water bodies, such as visible light, near infrared, and the Modified Normalized Difference Water Index (MNDWI), along with quality assessment (QA) bands to refine training labels, the methodology enables rapid access to highly accurate spatio temporal water body distribution data.
 
-![](example mlgee.jpg) 
+![](example mlgee.jpg)(https://www.sciencedirect.com/science/article/pii/S1569843222001261)
 
 The study successfully extracted water bodies for nine yearly periods between 2013 and 2021, validating the model's high accuracy (over 92%) and demonstrating its potential for continuous monitoring and assessment of water dynamics. This work not only showcases the integration of deep learning models with GEE for environmental monitoring but also addresses the limitations of GEE in supporting deep learning computations directly. By offering a solution that rapidly automates the deployment of deep learning models for large-scale environmental analysis, this research provides valuable methodological support for understanding water resources and their temporal variability, crucial for climate change studies, disaster prevention, and sustainable management of water ecosystems.
 
-![](mlgee mosaic.jpg) 
+![](mlgee mosaic.jpg)(https://www.sciencedirect.com/science/article/pii/S1569843222001261)
 
-![](mlgee enhancement.jpg) 
+![](mlgee enhancement.jpg)(https://www.sciencedirect.com/science/article/pii/S1569843222001261)
 
 ## Personal Reflection
 
@@ -40,13 +35,10 @@ It also inspired me to see how technology, even in geography and environmental s
 
 ## Bibliography
 
-Barsi, Á., Kugler, Z., László, I., Szabó, G., Abdulmutalib, H., 2018. Accuracy dimensions in remote sensing. International Archives of the Photogrammetry, Remote Sensing & Spatial Information Sciences 42.
-
-Foody, G.M., 2004. Sub-Pixel Methods in Remote Sensing, in: Jong, S.M.D., Meer, F.D.V. der (Eds.), Remote Sensing Image Analysis: Including The Spatial Domain, Remote Sensing and Digital Image Processing. Springer Netherlands, Dordrecht, pp. 37–49.
-
-Jensen, J.R., 2015. Introductory digital image processing: a remote sensing perspective. Prentice-Hall Inc.
-
-Karasiak, N., Dejoux, J.-F., Monteil, C., Sheeren, D., 2022. Spatial dependence between training and test sets: another pitfall of classification accuracy assessment in remote sensing. Mach Learn 111, 2715–2740.
-
-Matarira, D., Mutanga, O., Naidu, M., Vizzari, M., 2023. Object-Based Informal Settlement Mapping in Google Earth Engine Using the Integration of Sentinel-1, Sentinel-2, and PlanetScope Satellite Data. Land 12, 99.
+1. Barsi, Á., Kugler, Z., László, I., Szabó, G., Abdulmutalib, H., 2018. Accuracy dimensions in remote sensing. International Archives of the Photogrammetry, Remote Sensing & Spatial Information Sciences 42.
+2. Foody, G.M., 2004. Sub-Pixel Methods in Remote Sensing, in: Jong, S.M.D., Meer, F.D.V. der (Eds.), Remote Sensing Image Analysis: Including The Spatial Domain, Remote Sensing and Digital Image Processing. Springer Netherlands, Dordrecht, pp. 37–49.
+3. Jensen, J.R., 2015. Introductory digital image processing: a remote sensing perspective. Prentice-Hall Inc.
+4. Karasiak, N., Dejoux, J.-F., Monteil, C., Sheeren, D., 2022. Spatial dependence between training and test sets: another pitfall of classification accuracy assessment in remote sensing. Mach Learn 111, 2715–2740.
+5. Li, Kai, et al. “Deep Learning Empowers the Google Earth Engine for Automated Water Extraction in the Lake Baikal Basin.” International Journal of Applied Earth Observation and Geoinformation, vol. 112, 1 Aug. 2022, p. 102928, www.sciencedirect.com/science/article/pii/S1569843222001261, https://doi.org/10.1016/j.jag.2022.102928.
+6. Matarira, D., Mutanga, O., Naidu, M., Vizzari, M., 2023. Object-Based Informal Settlement Mapping in Google Earth Engine Using the Integration of Sentinel-1, Sentinel-2, and PlanetScope Satellite Data. Land 12, 99.
 
