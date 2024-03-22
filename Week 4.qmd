@@ -6,7 +6,7 @@ One of the newest project ideas is the Septima Verde Project, which proposes to 
 
 This project will use the current sidewalk and 4 vehicle lanes (half of the highway) as well as various unused lots and dwellings.
 
-![](Corredor Verde.webp)(https://www.lasillavacia.com/red-de-expertos/red-cachaca/repensando-el-corredor-verde-de-la-septima-estrategias-temporales-para-predios-en-espera/)
+[![Septima Verde Project](Corredor Verde.webp)](https://www.lasillavacia.com/red-de-expertos/red-cachaca/repensando-el-corredor-verde-de-la-septima-estrategias-temporales-para-predios-en-espera/)
 
 **Objectives:**
 
@@ -44,7 +44,7 @@ For many decades, Bogota was one of the most advanced and innovative cities, hom
 - Bogotá struggles with air pollution, primarily due to vehicular emissions. This issue is compounded by the city's geographical location in a high-altitude valley, which can trap pollutants.The current air quality is 2.3 times above WHO's recommendation.
 - Bogotá struggles with air pollution, primarily due to vehicular emissions. This issue is compounded by the city's geographical location in a high-altitude valley, which can trap pollutants.The current air quality is 2.3 times above WHO's recommendation.
 
-![](bogota pollution.jpg)(https://www.environmentaljusticecolombia.com/aircontamination1)
+[![Pollution in Bogota](bogota pollution.jpg)](https://www.environmentaljusticecolombia.com/aircontamination)
 
 Because of this, it's inhabitants are exposed to heavily contaminated air, to horrible traffic, to an expensive transportation system that does not support the population density of the city, and to great disparities regarding access to sustainable infrastructure such as as green housing, bicycle routs, etc... It is one of few cities with more than 7 million citizens that does NOT have a metro system, making it very dependent on cars. There have been many proposals for urban traffic tolls and carpooling obligations, which have all been debated and blocked by congress.
 

@@ -30,7 +30,7 @@ Employing Synthetic Aperture Radar (SAR) data from ALOS-2/PALSAR-2, SRTM, NASADE
 
 The study's methodology involved preprocessing of satellite data, model evaluation, and comparison, with a particular emphasis on the Random Forest algorithm for its exceptional accuracy. The generation of an AGB map, indicating mean biomass values across various classes, demonstrates the significant variability in biomass and the model's capability to capture these differences.This approach contributes valuable insights for the management and conservation of mangrove ecosystems, vital for climate change mitigation and the protection of biodiversity and local livelihoods.
 
-![](fandom forest.jpg)(https://www.sciencedirect.com/science/article/pii/S2405844023079537) 
+[![Random Forest in GEE](fandom forest.jpg)](https://www.sciencedirect.com/science/article/pii/S2405844023079537)
 
 ## Personal reflection
 

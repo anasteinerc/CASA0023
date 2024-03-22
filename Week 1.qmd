@@ -8,7 +8,7 @@ This week was very introductory, ideal for people like me who have no previous k
 ### What is it?
 Remote sensing, as defined by NASA, involves acquiring information from a distance, utilizing a variety of sensors on platforms like satellites, planes, and drones. Over 150 satellites and more than 27,000 devices in orbit provide a rich array of data sources such as Sentinel, LANDSAT, and SAR satellites, facilitating diverse applications from environmental monitoring to urban planning.
 
-![Remote Sensing](remote sensing.jpg)
+[![Remote Sensing Diagram](remote sensing.jpg)]
 
 ### Types of Sensors
 **Passive sensors** read solar light that is reflected off the earth’s surface; they do not emit any additional energy. A limitation is that the light can be interrupted or disturbed by clouds, contamination or any other physical obstacle.  
@@ -38,12 +38,12 @@ The significance of remote sensing extends across various fields. It's instrumen
 **High Spatial Resolution, Low Temporal Resolution**
 Archaeological Site Discovery: This application benefits significantly from high spatial resolution because it allows for the detailed observation of surface features that might indicate the presence of archaeological remains, such as ancient structures, roads, or tools, even if they are buried under vegetation or soil. The subtle differences in soil color, vegetation health, or topography that hint at archaeological features are more discernible with finer spatial detail. Since these sites and features do not change rapidly over time, low temporal resolution is acceptable. For example, capturing images of a potential archaeological site once a year or even less frequently might be sufficient because the changes of interest happen over decades or centuries, not days or weeks.
 
-![Archaeology Site in Peru](arqueology site.png)(https://landsat.visibleearth.nasa.gov/view.php?id=91071)
+[![Archaeology Site in Peru](arqueology site.png)](https://landsat.visibleearth.nasa.gov/view.php?id=91071)
 
 **Low Spatial Resolution, High Temporal Resolution**
 Weather Forecasting: For weather forecasting, high temporal resolution is crucial because weather conditions can change rapidly, and frequent updates are necessary to provide accurate forecasts. Meteorologists rely on data collected at intervals ranging from minutes to hours to track the development and movement of weather systems, such as storms, fronts, and precipitation patterns. However, the spatial resolution can be lower because the phenomena of interest, such as temperature gradients and large-scale atmospheric pressure changes, occur over large areas. Thus, capturing the broad patterns rather than the fine details is sufficient for effective forecasting.
 
-![Weather Forecast](weather forecast.jpg)(https://www.l3harris.com/50-year-legacy-advancing-weather-forecasting-noaa)
+[![Weather Forecast](weather forecast.jpg)](https://www.l3harris.com/50-year-legacy-advancing-weather-forecasting-noaa)
 
 ##Reflection
 

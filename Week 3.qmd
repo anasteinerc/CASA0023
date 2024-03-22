@@ -10,9 +10,9 @@ Just like any data recollection tool, Satellites are not always accurate and nee
 
 Geometric correction is the process in which satellite imagery is corrected. Each image has reference markers, such as each coordinates, which help trace and map images from before and after. All of these images are then passed through different mathematical algorithms for correction. 
 
-There are many different types of correction and enhancement.I will get into further detail about Dark Object Substraction.
+There are many different types of correction and enhancement.I will get into further detail about Dark Object Subtraction.
 
-![](correction.png)(https://www.mdpi.com/2072-4292/15/16/3965)
+[![Geometric Correction](correction.png)](https://www.mdpi.com/2072-4292/15/16/3965)
 
 ### **Types of Correction**
 
@@ -26,12 +26,12 @@ Orthorectification: Involves forcing a view to be correct as if viewed from abov
 
 ### **Methods for Enhancement**
 
-Allthough there are many types of enhancement that can be done to satellite imaging, I will talk about just a few:
+All though there are many types of enhancement that can be done to satellite imaging, I will talk about just a few:
 
 **Ratio:**
 Rationing involves calculating the difference between two spectral bands to highlight specific landscape features. The Normalized Difference Vegetation Index (NDVI) is a common example, exploiting the spectral trait where healthy vegetation reflects more in the Near-Infrared (NIR) but absorbs in the Red wavelength. This method is useful for identifying areas with healthy vegetation.
 
-![](Screenshot 2024-03-11 114906.png)(https://www.researchgate.net/publication/342413913_Testing_the_Multiple_Pathways_of_Residential_Greenness_to_Pregnancy_Outcomes_Model_in_a_Sample_of_Pregnant_Women_in_the_Metropolitan_Area_of_Donostia-San_Sebastian)
+[![Ratio Correction](Screenshot 2024-03-11 114906.png)](https://www.researchgate.net/publication/342413913_Testing_the_Multiple_Pathways_of_Residential_Greenness_to_Pregnancy_Outcomes_Model_in_a_Sample_of_Pregnant_Women_in_the_Metropolitan_Area_of_Donostia-San_Sebastian)
 
 **Filtering:**
 Filtering applies moving window operations to data, which can enhance or suppress certain features. An example is the Laplacian filter, used to highlight edges or contrast in the imagery, thus aiding in feature identification and analysis.
@@ -39,7 +39,7 @@ Filtering applies moving window operations to data, which can enhance or suppres
 **Texture**
 Texture Analysis focuses on the pixel-to-pixel relationships within an image to describe surface characteristics. This technique is valuable for distinguishing between different land cover types based on their texture, such as smooth grassland or bumpy deciduous forests.
 
-![](texture correction.png)(https://www.researchgate.net/publication/346042476_STAIR_20_A_Generic_and_Automatic_Algorithm_to_Fuse_Modis_Landsat_and_Sentinel-2_to_Generate_10_m_Daily_and_Cloud-Gap-Free_Surface_Reflectance_Product)
+[![Texture Correction](texture correction.png)](https://www.researchgate.net/publication/346042476_STAIR_20_A_Generic_and_Automatic_Algorithm_to_Fuse_Modis_Landsat_and_Sentinel-2_to_Generate_10_m_Daily_and_Cloud-Gap-Free_Surface_Reflectance_Product)
 
 **Joining Data**
 Preprocessing steps performed on collected data. Methods include enhancement, feature extraction, etc.

@@ -6,7 +6,7 @@ This week we talked about the critical issue in urban development that is Urban 
 
 A quick example of an Urban Heat Island is New York City, a heavily built-up area with much higher temperatures to its surrounding rural areas. According to the United State's Environmental Protection Agency, NYC's annual temperature is up to 3 Celsius degrees warmer than it's surrounding areas.
 
-![](nyc.jpg)(https://serc.carleton.edu/details/images/10925.html) 
+[![Urban Heat Island effect in New York City](nyc.jpg)](https://serc.carleton.edu/details/images/10925.html)
 
 Urban areas experience elevated temperatures due to factors such as heat-retaining surfaces (concrete and paved roads), industrial activities, scarce green spaces, and pollutants. This phenomenon exacerbates heat waves, impacts human health, and increases energy demand for cooling. This becomes into a vicious never-ending cycle.
 
@@ -42,7 +42,7 @@ Medellín's approach to combating urban heat and improving environmental quality
 
 **Results:** The implementation of green corridors has led to a noticeable 2°C reduction in temperature across the city, alongside potential improvements in air quality and biodiversity. Early studies and observations suggest the project has been effective in absorbing pollutants and reducing CO2 emissions, though comprehensive data on pollution reduction is still forthcoming.
 
-![](medellin 1.jpg)(https://lapoliticambiental.com.ar/contenido/4252/colombia-medellin-logro-reducir-el-calor-con-corredores-verdes)
+[![Corredor Verde in Medellin](medellin 1.jpg)](https://lapoliticambiental.com.ar/contenido/4252/colombia-medellin-logro-reducir-el-calor-con-corredores-verdes)
 
 **Conclusions:** Medellín's Green Corridors project exemplifies how nature-based solutions can address urban environmental challenges, offering a replicable model for other cities. Its success highlights the importance of community support, innovative planning, and the integration of green spaces in urban design to create climate-resilient and sustainable cities. The project's popularity and effectiveness have inspired other Colombian cities and regions like São Paulo to adopt similar initiatives, underlining the potential of green corridors as a global urban strategy against the impacts of climate change.
 
@@ -53,8 +53,8 @@ To assess the land surface temperatures (LST) in Los Angeles, we utilized the Go
 
 The MODIS data from both the Aqua and Terra satellites were processed to provide a comprehensive analysis of the land surface temperatures over Los Angeles. After loading the respective image collections, we applied a scale factor of 0.02 and converted the LST from Kelvin to Celsius. Subsequently, the datasets from both satellites were merged to calculate the mean temperature, ensuring a robust dataset by combining morning and afternoon observations. The resulting mean temperature data was clipped to the Los Angeles region and visualized on the map with a color gradient representing the temperature range. Additionally, a time series chart was generated to illustrate the LST variation over the selected summer period.
 
-![Screen shots from by practical](Screenshot 2024-03-13 122328.png)
-![Screen shots from by practical](Screenshot 2024-03-13 125617.png)
+[![Screenshot from my practical](Screenshot 2024-03-13 122328.png)]
+
 **Interpretations:**
 The resulting temperature map of Los Angeles reveals spatial variations in land surface temperatures during the summer period. Warmer temperatures, depicted in red, are prominent in urbanized and densely built-up areas, suggesting an urban heat island effect where human-made surfaces absorb and re-radiate heat more than natural landscapes. Cooler areas, shown in blue, typically correspond to vegetated regions, water bodies, and higher elevations that are known to influence local climate conditions. The minimum and maximum temperatures extracted from the data indicate a range of observed temperatures and help in identifying the extent of temperature variation across different land cover types. These insights can inform urban planning initiatives aimed at mitigating heat-related risks and enhancing the city's climate resilience.
 

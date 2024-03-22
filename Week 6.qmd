@@ -4,7 +4,7 @@
 
 This week was dedicated to Google Earth Engine (GEE), a cloud-based platform that enables planetary-scale environmental data analysis, and facilitates the processing of massive environmental datasets.
 
-![](Screenshot 2024-03-11 151442.png)(https://geovisualization.net/2022/09/09/google-earth-engine-and-dynamic-world/)
+[![Google Earth Engine](Screenshot 2024-03-11 151442.png)](https://geovisualization.net/2022/09/09/google-earth-engine-and-dynamic-world/)
 
 GEE functions by storing environmental datasets on cloud servers and processing this data server-side based on code written by users. It handles different data types, including raster (Image) and vector (Feature) data, and supports operations like image collection manipulation, regression analysis, and machine learning. GEE's architecture is designed around client-server interactions, with client-side code running in the user's browser and server-side operations executed on Google's servers.
 
@@ -35,7 +35,7 @@ Investigating on practical examples of use and enhancement of GEE data, I found 
 **Algorithm Implementation and Mosaic Process:**
 - A cloud-masking function was developed to assign a cloud score to each pixel, utilizing several criteria to differentiate clouds from other features like snow.
 
-![](zurich.png)(https://www.researchgate.net/publication/302589628_Generating_a_cloud-free_homogeneous_Landsat-8_mosaic_of_Switzerland_using_Google_Earth_Engine)
+[![GEE Imaging of Zurich](zurich.png)](https://www.researchgate.net/publication/302589628_Generating_a_cloud-free_homogeneous_Landsat-8_mosaic_of_Switzerland_using_Google_Earth_Engine)
 
 - Quality bands such as the Normalized Difference Vegetation Index - NDVI, were added to the images to select the pixel with the highest quality value for the mosaic.
 - The mosaic algorithm was designed to operate seasonally across different years, improving the representation of Switzerland's diverse landscapes throughout the seasons.
@@ -45,8 +45,9 @@ Through the application of quality bands and a cloud-masking function, the proje
 
 The study generated seasonal mosaics (winter, spring, summer, autumn) that were then combined to form a comprehensive view of Switzerland. These mosaics utilized NDVI for land areas and a combination of NDVI and cloudiness for water bodies to address the challenges of representing clouds and atmospheric particles.
 
-![](summer mosaic.png)(https://www.researchgate.net/publication/302589628_Generating_a_cloud-free_homogeneous_Landsat-8_mosaic_of_Switzerland_using_Google_Earth_Engine)
-![](snow mosaic.png)(https://www.researchgate.net/publication/302589628_Generating_a_cloud-free_homogeneous_Landsat-8_mosaic_of_Switzerland_using_Google_Earth_Engine)
+[![Summer Mosaic of Zurich](summer mosaic.png)](https://www.researchgate.net/publication/302589628_Generating_a_cloud-free_homogeneous_Landsat-8_mosaic_of_Switzerland_using_Google_Earth_Engine)
+
+[![Snow Mosaic of Zurich](snow mosaic.png)](https://www.researchgate.net/publication/302589628_Generating_a_cloud-free_homogeneous_Landsat-8_mosaic_of_Switzerland_using_Google_Earth_Engine)
 
 ## Personal reflection
 
