@@ -1,0 +1,72 @@
+# Google Earth Engine
+
+## Summary
+
+This week was dedicated to Google Earth Engine (GEE), a cloud-based platform that enables planetary-scale environmental data analysis, and facilitates the processing of massive environmental datasets.
+
+[![Google Earth Engine](Screenshot 2024-03-11 151442.png)](https://geovisualization.net/2022/09/09/google-earth-engine-and-dynamic-world/)
+
+GEE functions by storing environmental datasets on cloud servers and processing this data server-side based on code written by users. It handles different data types, including raster (Image) and vector (Feature) data, and supports operations like image collection manipulation, regression analysis, and machine learning. GEE's architecture is designed around client-server interactions, with client-side code running in the user's browser and server-side operations executed on Google's servers.
+
+I always find Google, and all it's resources and infrastructure, fascinating; I really support their contribution to the collection and storage of information and data, and their openness in making everything accessible. 
+
+**Practical implementation**
+
+The practical implementation of GEE involves setting up the environment, understanding GEE-specific terms, and writing JavaScript code for data analysis. Users can manipulate data through operations like filtering image collections, applying regression analysis to detect changes over time, and employing machine learning for classification tasks. 
+
+**Mapping Points in Google Earth Engine**: You can easily center the map on a specific location by creating a point object with geographic coordinates. Additionally, you have the option to manually add points to the map through the GUI by selecting the point icon, creating a new layer, and giving it a suitable name. This process allows for the dynamic exploration of specific areas within the GEE platform.
+
+**Working with Landsat Data**: Landsat data can be accessed and loaded into GEE script from the data catalogue, and be filtered the Landsat 9 data for a specific time frame. Further filtering options can refine the dataset based on time, region of interest, and cloud cover to ensure the data's relevance and quality.
+
+**Enhancing Image Quality**: Applying scale factors and offsets is crucial for accurate representation. Implementing a function to apply these scale factors can significantly improve the quality of the images for analysis.
+
+**Creating Mosaics and Clipping Images**: Mosaicing and clipping are essential techniques for managing differences between tiles and focusing analysis on specific regions. 
+
+**Advanced Analysis and Exporting**: Further analysis techniques such as texture measures, Principal Component Analysis (PCA), and calculating indices like NDVI are available in GEE for deeper insights into the data. 
+
+**Machine Learning**: ML algorithms can be applied to perform tasks such as classification, regression, and clustering directly within the cloud-based platform. 
+
+## Application: Swiss National Point of Contact for Satellite Images (NPOC)
+
+Investigating on practical examples of use and enhancement of GEE data, I found a journal where the NPOC used various methodologies to create a cloud-free, homogeneous Landsat-8 mosaic of Switzerland. 
+
+**Data Source and Pre processing:** The project primarily used Landsat-8 Top of the Atmosphere Reflectance (TOA) data. Due to challenges with predefined algorithms that targeted land areas causing artifacts in open water bodies, a custom water mask was developed to enhance the mosaic's accuracy.
+
+**Algorithm Implementation and Mosaic Process:**
+- A cloud-masking function was developed to assign a cloud score to each pixel, utilizing several criteria to differentiate clouds from other features like snow.
+
+[![GEE Imaging of Zurich](zurich.png)](https://www.researchgate.net/publication/302589628_Generating_a_cloud-free_homogeneous_Landsat-8_mosaic_of_Switzerland_using_Google_Earth_Engine)
+
+- Quality bands such as the Normalized Difference Vegetation Index - NDVI, were added to the images to select the pixel with the highest quality value for the mosaic.
+- The mosaic algorithm was designed to operate seasonally across different years, improving the representation of Switzerland's diverse landscapes throughout the seasons.
+Different quality bands were used for land and water areas to ensure a homogeneous appearance across the mosaic.
+
+Through the application of quality bands and a cloud-masking function, the project succeeded in creating a visually consistent and cloud-free representation of Switzerland. This was particularly evident in the handling of water bodies and areas with snow coverage, where specialized criteria were applied to maintain clarity and accuracy.
+
+The study generated seasonal mosaics (winter, spring, summer, autumn) that were then combined to form a comprehensive view of Switzerland. These mosaics utilized NDVI for land areas and a combination of NDVI and cloudiness for water bodies to address the challenges of representing clouds and atmospheric particles.
+
+[![Summer Mosaic of Zurich](summer mosaic.png)](https://www.researchgate.net/publication/302589628_Generating_a_cloud-free_homogeneous_Landsat-8_mosaic_of_Switzerland_using_Google_Earth_Engine)
+
+[![Snow Mosaic of Zurich](snow mosaic.png)](https://www.researchgate.net/publication/302589628_Generating_a_cloud-free_homogeneous_Landsat-8_mosaic_of_Switzerland_using_Google_Earth_Engine)
+
+## Personal reflection
+
+First of all, I was very excited to learn about the Google Earth Engine, as I had already some experience in previous works of visualizing and downloading somethings. It is fascinating to me how Google not only has the ability to collect this type of satellite data but also incorporate crowd sourcing and continuous community involvement in the improvement and enhancement of data.
+
+Now regarding the case study I found in Switzerland, I found the project very innovative and useful in how they were able to create detailed and clear images that still preserved all the key information. 
+
+Considering my context in Bogota, a city known for its challenges with cloud coverage and air pollution, the methodologies and technologies applied in this case study could be beneficial. Bogota faces unique environmental monitoring challenges due to its high altitude, frequent cloud cover, and urban pollution.
+
+By adapting the cloud-masking functions and quality band selection techniques demonstrated, we could generate high-quality, cloud-free mosaics of Bogota and its surroundings. These mosaics could play a crucial role in urban planning, environmental protection, and pollution control by providing accurate and up-to-date information on land cover, vegetation health, and the extent of pollution coverage.The project also emphasizes the importance of community engagement and the use of available resources and forums to improve and adapt the methodologies to local needs.
+
+Tying everything together with the Septima Verde case in Bogota, that I mentioned in Week 4, I feel that similar things could be done in my home city where there is alreadya lot of earch data, ground data and public-social collaboration.
+
+## Bibliography
+
+1. Amani, M., Ghorbanian, A., Ahmadi, S.A., Kakooei, M., Moghimi, A., Mirmazloumi, S.M., Moghaddam, S.H.A., Mahdavi, S., Ghahremanloo, M., Parsian, S., Wu, Q., Brisco, B., 2020. Google Earth Engine Cloud Computing Platform for Remote Sensing Big Data Applications: A Comprehensive Review. IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing 13, 5326–5350.
+2. Cloud-Based Remote Sensing with Google Earth Engine (accessed 1.5.23).
+3. Google Earth Engine and Dynamic World.” Geovisualization.net, 9 Sept. 2022, geovisualization.net/2022/09/09/google-earth-engine-and-dynamic-world/.
+4. Gorelick, N., Hancher, M., Dixon, M., Ilyushchenko, S., Thau, D., Moore, R., 2017. Google Earth Engine: Planetary-scale geospatial analysis for everyone. Remote Sensing of Environment, Big Remotely Sensed Data: tools, applications and experiences 202, 18–27.
+This paper is very similar, but focus on SECTION VII.GEE Applications
+5. Kochenour, C., 2020. Introduction — Remote Sensing with Google Earth Engine.
+6. Stuhler, Sophie, et al. “Generating a Cloud-Free, Homogeneous Landsat-8 Mosaic of Switzerland Using Google Earth Engine.” Remote Sensing Laboratories, www.researchgate.net/publication/302589628_Generating_a_cloud-free_homogeneous_Landsat-8_mosaic_of_Switzerland_using_Google_Earth_Engine.

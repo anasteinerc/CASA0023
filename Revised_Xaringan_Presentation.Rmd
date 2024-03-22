@@ -1,0 +1,134 @@
+
+---
+title: "Landsat Data"
+subtitle: "Landsat sensors - Week 2"
+author: "Ana Steiner"
+institute: "UCL"
+date: "2024/01/24 (updated: `r Sys.Date()`)"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: true 
+    css: styles.css  
+---
+
+# Importance of Landsat data
+
+The Landsat program, managed by NASA and the U.S. Geological Survey, is one of the longest-running enterprises for collecting satellite imagery of Earth. This program has been instrumental in providing continuous, valuable data for understanding and managing Earth's resources. 
+
+- It has played a pivotal role in understanding our planet's dynamic change by providing critical Earth observation data. 
+- The satellites have been working for more than 50 years and have contributed with essential data that showcases environmental and demographic changes.
+- Data has played a key role in environmental research and policy making.
+
+---
+
+# Missions and Satellites:
+
+<img src="Landsat satellites.jpg" style="height:5%;" />
+<br>
+<small>Source: Journal Remote Sensing of Environment vol 225</small>
+
+---
+
+# Attributes and Sensors
+
+- The Landsat program employs Earth-observing satellites, each equipped with specialized sensors, such as the Operational Land Imager and Thermal Infrared Sensor. These sensors capture data across multiple spectral bands, offering valuable insights into Earth's surface properties.
+
+**Spatial Resolution:** Landsat imagery offers a range of spatial resolutions, with the most recent Landsats (Landsat 7 and Landsat 8) providing resolutions from 15 meters (panchromatic band) to 30 meters (multispectral bands) for land observations. This resolution allows for detailed mapping and analysis of land cover and land use changes.
+
+**Temporal Resolution:** Landsat satellites have a revisit cycle of 16 days, providing a balance between high spatial resolution and frequent temporal coverage. This enables consistent monitoring of changes over time, important for environmental management, agricultural assessment, and tracking urban expansion.
+
+**Radiometric Resolution:** Landsat sensors are designed to capture a wide range of brightness levels, enhancing their ability to detect subtle changes in the Earth's surface, from dark, dense forests to bright snow-covered areas.
+
+**Spectral Resolution:** Landsat satellites carry sensors that measure light in various wavelengths, including visible, near-infrared, and thermal infrared bands. This spectral diversity is crucial for differentiating between different types of vegetation, soil, water bodies, and man-made materials.
+
+---
+
+# Applications
+
+Landsat satellites primarily capture optical imagery, which includes visible light, near-infrared, and short-wave infrared. This allows for detailed observations of the Earth's surface during daytime passes.
+
+**Forest Management:** Landsat imagery supports the monitoring of forest health, coverage, and changes over time due to natural processes or human activities. It's crucial for conservation efforts, understanding the impacts of climate change, and managing resources sustainably.
+
+**Agriculture Monitoring:** The program plays a significant role in assessing crop health, estimating yields, and managing irrigation, aiding in food security and efficient resource use.
+
+**Urban Deformation Mapping:** Landsat's optical data can also contribute to urban planning and development studies by providing high-resolution images that help monitor growth and land-use change.
+
+**Marine Monitoring and Emergency Management:** Landsat data can also support coastal zone management, monitoring of water quality, and assessment of marine ecosystems to some extent. In emergency management, 
+---
+
+# Application in Agriculture and Food Security
+- The project TerraPulse has used Landsat data to identify sustainable opportunities for agriculture that does not degrade the environment and ensures food security.
+
+<img src="terrapulse.jpg" style="width:30%;" />
+<br>
+<small>Source: AWS Public Sector Public Sector Blog </small>
+
+---
+
+# Application in Urban Planning and Infrastructure
+
+Landsat's archive facilitates urban growth analysis, land use planning, and infrastructure development. The picture showcases the rapid urbanization changes in Tokyo.
+
+<img src="tokyo.jpg" style="width:20%;" />
+<br>
+<small>Source: Journal Remote Sensing of Environment vol 127 </small>
+
+---
+
+# Limitations:
+
+Landsat images, depending on the specific satellite and sensors, typically have a resolution ranging from 15 to 100 meters. This means smaller features may not be accurately represented or might be entirely missed in the imagery. 
+
+Landsat satellites have a revisit time of about 16 days. This temporal resolution might not be sufficient for monitoring rapid environmental changes or for applications requiring more frequent observations, such as tracking fast-moving wildfires or monitoring crop conditions during critical growth stages.
+
+Certain environmental variables or features might be better detected with bands outside the Landsat range. For instance, some specific water quality parameters or certain types of minerals might require hyper spectral sensors with a wider range of spectral bands or bands positioned at very specific wavelengths.
+
+The quality of Landsat images can be significantly affected by atmospheric conditions, such as clouds, smoke, or haze. While there are algorithms designed to correct for some atmospheric effects, they cannot entirely eliminate these distortions. 
+
+---
+
+# Comparison with Sentinel
+
+**Mission Scope:** Landsat is focused on long-term monitoring of Earth's land surfaces, making it invaluable for environmental research and resource management. Sentinel satellites, part of the Copernicus program, offer a broader scope, including land, ocean, ice, and atmosphere monitoring, supporting diverse applications from environmental protection to security.
+
+**Spectral and Sensor Capabilities:** Landsat provides detailed spectral data for land analysis, including vegetation, water, and thermal properties. Sentinel encompasses a wider range of sensors, like SAR on Sentinel-1 for all-weather conditions and high-resolution multispectral instruments on Sentinel-2 for detailed vegetation and land cover studies.
+
+**Spatial Resolution:** Landsat offers resolutions up to 15 meters for detailed land observations. Sentinel-2 provides even finer resolutions (down to 10 meters), enabling more detailed analysis of land cover and vegetation health.
+
+**Temporal Resolution:** Landsat satellites have a 16-day revisit cycle per satellite, aiming for comprehensive coverage of Earth's landmass. Sentinel satellites, working in pairs, offer more frequent revisits (as short as 5 days for Sentinel-2), which is crucial for monitoring rapid changes and dynamic environments.
+
+---
+
+# Personal reflection
+
+While investigating in more detail both types of sensors, to decide which one I would focus on for this presentation, as well as in the previous slide where I compare then, I found it very interesting how one is managed by the United States while the other is by the Europeaon Comission. 
+
+My initial hypothesis was that there must be some politics behind all of this, but I was happy to find that there is actually more solidarity and cooperation than anything else. Being a project of the U.S. government, the Landsat program's development and deployment have been influenced by U.S. policy, budgetary considerations, and scientific priorities. The Sentinel program reflects the European Union's commitment to environmental management and action on climate change. It also embodies the EU's desire to be a leading player in space and Earth observation technologies. 
+
+Both have free and open-access data and have been very vocal on the importance of sharing everything.
+
+---
+
+# Bibliography (1)
+
+1. aws.amazon.com. (2022). Managing the world’s natural resources with earth observation | AWS Public Sector Blog. [online] Available at: https://aws.amazon.com/es/blogs/publicsector/managing-worlds-natural-resources-earth-observation/ [Accessed 20 Mar. 2024].
+2. Bagan, H. and Yamagata, Y. (2012). Landsat analysis of urban growth: How Tokyo became the world’s largest megacity during the last 40years. Remote Sensing of Environment, 127, pp.210–222. doi:https://doi.org/10.1016/j.rse.2012.09.011.
+3. earthobservatory.nasa.gov. (2015). Sierra Nevada de Santa Marta. [online] Available at: https://earthobservatory.nasa.gov/images/85673/sierra-nevada-de-santa-marta [Accessed 20 Mar. 2024].
+4. esa.int. (n.d.). Copernicus Sentinel Expansion missions. [online] Available at: https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Copernicus_Sentinel_Expansion_missions.www.
+5. esa.int. (n.d.). The Sentinel missions. [online] Available at: https://www.esa.int/Applications/Observing_the_Earth/Copernicus/The_Sentinel_missions.
+6. NASA (2021a). Landsat NeXt | Landsat Science. [online] landsat.gsfc.nasa.gov. Available at: https://landsat.gsfc.nasa.gov/satellites/landsat-next/.
+7. NASA. (2021b). Landsat 9 - Landsat Science. [online] Available at: https://landsat.gsfc.nasa.gov/satellites/landsat-9/.
+
+---
+
+# Bilbiography (2)
+
+8. Nasa.gov. (2010). Vistula River Flooding, Southeastern Poland. [online] Available at: https://earthobservatory.nasa.gov/images/44102/vistula-river-flooding-southeastern-poland.www.
+9. Wulder, M.A., Loveland, T.R., Roy, D.P., Crawford, C.J., Masek, J.G., Woodcock, C.E., Allen, R.G., Anderson, M.C., Belward, A.S., Cohen, W.B., Dwyer, J., Erb, A., Gao, F., Griffiths, P., Helder, D., Hermosilla, T., Hipple, J.D., Hostert, P., Hughes, M.J. and Huntington, J. (2019). Current status of Landsat program, science, and applications. Remote Sensing of Environment, [online] 225, pp.127–147. doi:https://doi.org/10.1016/j.rse.2019.02.015.
+
+---
+

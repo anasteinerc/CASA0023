@@ -1,0 +1,65 @@
+
+# Introduction to Remote Sensing
+
+## Summary
+
+This week was very introductory, ideal for people like me who have no previous knowledge of remote sensing and of what satellites actually do. We learnt the basic definition of what remote sensing is, then went through some theoretical explanations on the type of sensors used, as well as the different resolutions that have to be considered and manipulated (accordingly) to get the most optimal results.
+
+### What is it?
+Remote sensing, as defined by NASA, involves acquiring information from a distance, utilizing a variety of sensors on platforms like satellites, planes, and drones. Over 150 satellites and more than 27,000 devices in orbit provide a rich array of data sources such as Sentinel, LANDSAT, and SAR satellites, facilitating diverse applications from environmental monitoring to urban planning.
+
+[![Remote Sensing Diagram](remote sensing.jpg)]
+
+### Types of Sensors
+**Passive sensors** read solar light that is reflected off the earth’s surface; they do not emit any additional energy. A limitation is that the light can be interrupted or disturbed by clouds, contamination or any other physical obstacle.  
+
+**Active sensors** send signals down to the earth that bounces back to the sensor; this makes them much more effective towards climate and atmospheric conditions.
+
+There are different types of **radiation**, due to different materials and objects that reflect energy and light differently.The variance in radiation have different wavelengths within the electromagnetic spectrum. There is a need for different sensors to read different wavelengths and analyse different information.
+
+### Types of Resolution
+Remote sensing has four resolutions:
+
+**Spectral:** The number of bands that the sensor records. Visible light is made up of red, green and blue light (R,G,B).
+
+**Spatial:** The size of each pixel in the image (very high resolution is in cm while high resolution can go up to various kms).
+
+**Temporal:** The frequency in which an area is revisited to capture more images to compare (various times a day, months appart, or years appart).
+
+**Radiometric:** The range of reflectance values that the sensor recognizes.
+
+There is a constant compensation between different resolutions to find a balance to get optimal data as needed. In the next section, you can see two different examples. 
+
+In this week's diary entry I will show two real life examples that use different types of resolutions to solve different environmental and demographic issues. I end the chapter with my final reflection. 
+
+## Applications 
+The significance of remote sensing extends across various fields. It's instrumental in environmental monitoring, aiding in climate change research, deforestation tracking, and oceanography. Urban planning benefits from detailed land use and development data, while disaster response initiatives rely on immediate data for efficient management and recovery efforts.
+
+**High Spatial Resolution, Low Temporal Resolution**
+Archaeological Site Discovery: This application benefits significantly from high spatial resolution because it allows for the detailed observation of surface features that might indicate the presence of archaeological remains, such as ancient structures, roads, or tools, even if they are buried under vegetation or soil. The subtle differences in soil color, vegetation health, or topography that hint at archaeological features are more discernible with finer spatial detail. Since these sites and features do not change rapidly over time, low temporal resolution is acceptable. For example, capturing images of a potential archaeological site once a year or even less frequently might be sufficient because the changes of interest happen over decades or centuries, not days or weeks.
+
+[![Archaeology Site in Peru](arqueology site.png)](https://landsat.visibleearth.nasa.gov/view.php?id=91071)
+
+**Low Spatial Resolution, High Temporal Resolution**
+Weather Forecasting: For weather forecasting, high temporal resolution is crucial because weather conditions can change rapidly, and frequent updates are necessary to provide accurate forecasts. Meteorologists rely on data collected at intervals ranging from minutes to hours to track the development and movement of weather systems, such as storms, fronts, and precipitation patterns. However, the spatial resolution can be lower because the phenomena of interest, such as temperature gradients and large-scale atmospheric pressure changes, occur over large areas. Thus, capturing the broad patterns rather than the fine details is sufficient for effective forecasting.
+
+[![Weather Forecast](weather forecast.jpg)](https://www.l3harris.com/50-year-legacy-advancing-weather-forecasting-noaa)
+
+##Reflection
+
+Personally, everything I learnt this week was completely new to me. I did not know about the different types of sensors, nor was I clear on all the physics behind their image recollection. I know understand the huge value that they have on various types of measurements and studies (both urban and rural, which I find fascinating). I always though of this type of data recollection and analysis very foreign to me, but now I understand that in the fields and professions that I am interested in, I could easily incorporate satellite data. 
+
+Doing the practical exercise, working with the raster data, processing it and then visualizing it, was very useful for me to understand the physics behind it all; seeing how all images that we see in real life are a composition of different color layers and a lot of different data. 
+
+I also learnt a lot from the two real life applications that I investigated. First, it was fascinating to see the different fields that they apply, both very relevant and interesting to me as an anthropologist. What I learnt the most though, was how in each case, time and space have different importance and require different levels of detail. I see that each field incorporates the same methodologies but with vastly different focuses and details.
+
+## Bibliography
+
+1. Brady, M., 2021. Remote Sensing for Dummies (accessed 1.4.23).
+2. Butcher, G., 2016. Tour of the electromagnetic spectrum, Third edition. ed. National Aeronautics and Space Administration, Washington, DC.
+3. landsat.visibleearth.nasa.gov. (n.d.). Landsat Image Gallery - Space Archaeology: In the Realm of Resolution. [online] Available at: https://landsat.visibleearth.nasa.gov/view.php?id=91071.
+4. science.nasa.gov. (n.d.). 10 Things: What’s That Space Rock? - NASA Science. [online] Available at: https://science.nasa.gov/solar-system/10-things-whats-that-space-rock.
+5. Schilling, D.R. (2015). Remote Sensing & Sustainable Land Use. [online] Industry Tap. Available at: https://www.industrytap.com/remote-sensing-sustainable-land-use/33218 [Accessed 20 Mar. 2024].
+6. seos-project.eu. (n.d.). Classification Algorithms and Methods. [online] Available at: https://seos-project.eu/classification/classification-c01-p05.html.
+7. Tempfli, K., Huurneman, Gc., Bakker, Wh., Janssen, L.L., Feringa, W., Gieske, A., Grabmaier, K., Hecker, C., Horn, J., Kerle, N., others, 2009. Principles of remote sensing: an introductory textbook. International Institute for Geo-Information Science and Earth Observation.
+8. www.l3harris.com. (n.d.). 50-Year Legacy of Advancing Weather Forecasting with NOAA | L3Harris® Fast. Forward. [online] Available at: https://www.l3harris.com/50-year-legacy-advancing-weather-forecasting-noaa [Accessed 20 Mar. 2024].

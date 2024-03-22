@@ -1,0 +1,107 @@
+# Public Policy Case Study
+
+## Summary of Bogota's Septima Verde
+
+One of the newest project ideas is the Septima Verde Project, which proposes to build a green corridor along one of the largest and busiest avenues in the city; this project includes building pedestrian and cycle friendly routes and the delimitation of green spaces and parks, ultimately reducing car lanes and hopefully encouraging for more non-motorized transportation. The project's goal is also to promote more sustainable urban development plans and improve air quality.
+
+This project will use the current sidewalk and 4 vehicle lanes (half of the highway) as well as various unused lots and dwellings.
+
+[![Septima Verde Project](Corredor Verde.webp)](https://www.lasillavacia.com/red-de-expertos/red-cachaca/repensando-el-corredor-verde-de-la-septima-estrategias-temporales-para-predios-en-espera/)
+
+**Objectives:**
+
+1.  To transform certain streets and corridors into pedestrian-friendly spaces with an emphasis on greenery, parks, and public spaces.
+
+2.  To reduce car lanes and allocate more space for pedestrians, cyclists, and public transportation.
+
+3.  To encourage the use of non-motorized transportation, such as walking and cycling.
+
+4.  To combat air pollution and enhance urban sustainability by increasing green spaces and reducing car emissions.
+
+**Key Components:**
+
+1.  Urban Planning: The initiative involves urban planning and redesign efforts to allocate more space for pedestrians, greenery, and public amenities.
+
+2.  Cycling Infrastructure: The creation of dedicated bike lanes and cycling infrastructure to promote sustainable transportation options.
+
+3.  Public Transportation Integration: Integration with public transportation systems, such as TransMilenio, to encourage the use of buses and reduce private car use.
+
+4.  Green Spaces: The inclusion of green spaces, parks, and urban gardens along the corridors to enhance the urban environment and improve air quality.
+
+5.  Accessibility: Improving accessibility for people with disabilities through the creation of barrier-free spaces.
+
+6.  Street Furniture: Installation of street furniture, benches, and public art to enhance the overall experience of the corridors.
+
+It also contemplates the construction of new routs of public bus around this corridor, giving people more incentives to not use their car. This last component of the project has generated much public and political debate. 
+
+### Context of Bogota
+
+Bogota is a city heavily criticized for its poor urban planning; it is one of the largest and densest capital cities in Latin America yet it suffers from having some of the worst public transportation systems and a lack of sustainable infrastructure.
+
+For many decades, Bogota was one of the most advanced and innovative cities, home to Transmilenio and the largest bicycle route in South America, as well as having constructed various sustainable buildings. Nonetheless, the city has grown at such a fast rate, and in such an informal way, that the urban planning has not been able to support the growing demographic necessities. 
+- Bogotá has experienced explosive growth over the past few, leading to sprawling urban development that outpaces the city's ability to provide infrastructure and services.It's population grows 2% a year. 
+- The city is notorious for its traffic jams, with residents facing long daily commutes. The lack of a metro system exacerbates this issue, making Bogotá heavily reliant on road-based transportation.On average, citizens spend 132 hours a year in traffic.
+- Bogotá struggles with air pollution, primarily due to vehicular emissions. This issue is compounded by the city's geographical location in a high-altitude valley, which can trap pollutants.The current air quality is 2.3 times above WHO's recommendation.
+- Bogotá struggles with air pollution, primarily due to vehicular emissions. This issue is compounded by the city's geographical location in a high-altitude valley, which can trap pollutants.The current air quality is 2.3 times above WHO's recommendation.
+
+[![Pollution in Bogota](bogota pollution.jpg)](https://www.environmentaljusticecolombia.com/aircontamination)
+
+Because of this, it's inhabitants are exposed to heavily contaminated air, to horrible traffic, to an expensive transportation system that does not support the population density of the city, and to great disparities regarding access to sustainable infrastructure such as as green housing, bicycle routs, etc... It is one of few cities with more than 7 million citizens that does NOT have a metro system, making it very dependent on cars. There have been many proposals for urban traffic tolls and carpooling obligations, which have all been debated and blocked by congress.
+
+### Political context around the proposal
+
+The Mayoress of Bogota had made a big point, during her campaign, to not building public transportation infrastructure during this avenue, and this project would be a direct contradiction to this, the main opposers of the project are ironically her election base.
+
+This makes for a very interesting political setting. The creation of the green corridor, as well as the public transportation routes, would really help some of the most deprived populations, as it would give them access to better transportation, to more green areas, and in general would hopefully decongest the traffic; but it has been made clear that it would affect negatively the richer citizens who have benefited from this highway with no public transportation and just private cars. 
+
+This project has become a clear example of how difficult it is to propose and implement a public policy or a public project that keeps everyone content. Additionally, many opposers also suggest better ways to use the unused lots such as building schools or community centers.
+
+### Link to Global Agendas/Goals:
+
+Incorporating remotely sensed data to tackle urban congestion and pollution aligns with the Sustainable Development Goals (SDGs), particularly SDG 11 (Sustainable Cities and Communities) and SDG 13 (Climate Action). By improving air quality and reducing traffic congestion, cities can create more sustainable, livable environments for their inhabitants, contributing to global efforts against climate change and for sustainable urban development.
+
+The Septima Verde proposal would advance the current approaches to urban planning and mobility by prioritizing sustainable, active mobility (walking, cycling, and the use of electric vehicles) and extensive citizen participation in the planning process. This approach signifies a shift from car-centric to people-centric urban development, promoting a cultural transformation towards sustainability and inclusivity. The project's emphasis on green corridors, pedestrian-friendly spaces, and enhanced public transport options sets a precedent for cities globally, showcasing how integrating technology and community engagement can lead to more resilient and sustainable urban environments.
+
+## Applications of remote sensing in Septima Verde:
+
+For the Planning and Design Phase:
+
+Land Use Data from Sentinel-2 and Landsat 8: Utilizing these satellites for land use mapping enables the identification of various urban elements—green spaces, industrial zones, residential areas, and roadways. This foundational analysis is crucial for determining where green areas can be expanded and which neighborhoods or commercial areas will benefit most from the project. This strategic input ensures the project’s interventions are both beneficial and precisely targeted.
+
+Baseline Air Quality Monitoring with Sentinel-5p: Establishing an initial air quality benchmark is vital for setting achievable yet ambitious project goals. By monitoring baseline air pollution levels, project planners can define clear, quantifiable targets for air quality improvements, ensuring the project's impact is both measurable and substantial.
+
+Vegetation and Land Cover Assessment via Sentinel-2 and Landsat 8: Analyzing current vegetation health and diversity enables the project to tailor green space enhancements to the city's specific ecological and aesthetic needs. This focus on biodiversity not only beautifies urban spaces but also contributes to the overall ecological health of the area.
+
+For the Monitoring and Compliance Stage:
+
+Mitigating Urban Heat Effects with Thermal Imagery: By incorporating thermal imagery to monitor the cooling effects of newly introduced green spaces, the project can directly measure its impact on reducing urban heat island effects. This data-driven approach allows for a quantifiable assessment of the project's climate mitigation effectiveness.
+
+Ongoing Air Quality Assessment with Sentinel-5p: Continuously measuring air quality post-implementation ensures that the project's air pollution reduction goals are met or exceeded, providing tangible benefits to urban residents.
+
+Analyzing Traffic Flow and Mobility Patterns with Satellite Traffic Data: Understanding changes in mobility patterns is essential for assessing the project's success in reducing vehicular traffic and promoting sustainable transportation modes. Satellite traffic data offers a detailed view of how pedestrian and vehicular movements evolve as a result of the project, enabling adjustments and highlighting successful strategies.
+
+The inclusion of real-time data on vehicular movements and air pollutants, complemented by satellite imagery for green cover and urban expansion monitoring, underpins the project's data-driven approach. The employment of platforms like Streetmix for public engagement further democratizes the urban planning process, allowing citizens to contribute actively to the visioning and redesigning of their streets in alignment with sustainable transportation modes. This integrated methodology not only enhances decision-making through robust data analysis but also fosters a collaborative planning environment, leveraging technology to achieve urban sustainability goals.
+
+## Comparison to Medellin's Corredor Verde (already implemented)
+
+Medellín's Green Corridors project is an award-winning initiative that sought to create cooling public spaces throughout the city by planting tens of thousands of trees and plants along sidewalks, riverbanks, and traffic thoroughfares. This initiative aimed to reduce temperatures, improve air quality, and offer shaded, green spaces for public use. By contrast, Bogotá's Septima Verde focuses on creating a sustainable mobility corridor that prioritizes pedestrians, cyclists, and non-motorized transport, along with the enhancement of green spaces. While both projects aim to improve urban sustainability and livability, Medellín's project is more directly focused on combating heat and air pollution, whereas Bogotá's has a broader scope related to urban mobility and space reclamation for community use.
+
+Both initiatives demonstrate innovative approaches to addressing urban environmental challenges, showcasing the potential for Colombian cities to lead in sustainable urban development. The comparison illustrates different but complementary strategies that can inspire other cities facing similar issues.
+
+## Personal reflections:
+
+As a Bogotá-raised anthropologist and geographer deeply passionate about my city's sustainable development, I have always been very analytically and critical of it's public policy projects and implementations. Witnessing the city's progress towards sustainability with initiatives like "Septima Verde" makes very proud, but it also generates many frustrations as it exacerbates how politically and economically divided it is.
+
+The high amount of corruption and inefficiency that has haunted local governments often overshadows all sustainable proposals. It really hurts and bothers me to see so much inefficiency due to this. My role as an anthropologist and geographer has fueled my determination to contribute positively to the city's development guaranteeing environmental and social well being.
+
+## Bibliography
+
+1. “Air Contamination & Citizen Monitoring.” EnvironmentalJustice, www.environmentaljusticecolombia.com/aircontamination1.
+2. “C40 Knowledge Community.” Www.c40knowledgehub.org, www.c40knowledgehub.org/s/article/Streetmix?language=en_US. Accessed 20 Mar. 2024.
+3. Freixes, Josep. “Judiciary Suspends the Tender for the Green Corridor in Bogota.” Colombia One: News from Colombia and the World, 27 Oct. 2023, colombiaone.com/2023/10/27/justice-suspends-bogota-green-corridor-tender/. Accessed 20 Mar. 2024.
+4.Sarmiento, German. ““Repensando El Corredor Verde de La Séptima: Estrategias Temporales Para Predios En Espera.”” La Silla Vacía, 23 Dec. 2023, www.lasillavacia.com/red-de-expertos/red-cachaca/repensando-el-corredor-verde-de-la-septima-estrategias-temporales-para-predios-en-espera/. Accessed 20 Mar. 2024.
+5. “The Transformation of Carrera Séptima into Bogotá’s First Green Corridor.” ReVista, revista.drclas.harvard.edu/the-transformation-of-carrera-septima-into-bogotas-first-green-corridor/.
+
+
+
+

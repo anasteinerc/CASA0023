@@ -1,0 +1,16 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "Personal Diary for CASA0023"
+  chapters:
+    - index.qmd
+    - Week 1.qmd
+    - Week 2.qmd
+    - Week 3.qmd
+    - Week 4.qmd
+    - Week 6.qmd
+    - Week 7.qmd
+    - Week 8.qmd
+    - Week 9.qmd

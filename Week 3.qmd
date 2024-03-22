@@ -1,0 +1,96 @@
+# Geometric and Atmospheric Correction
+
+## Summary
+
+The subject this week was correction and different ways in which we could edit, improve and enhance images to better suit the specific analysis that we want. It was a very technical and scientific week. For this week diary entry, I will start with a quick summary of the technical definitions and processes that I learnt, and then I have decided to go into detail on the practical that we did in class in which we applied Grey Level Co-Occurence Matrix to correct the texture of an image, as well as analyse a real world case in Colombia where this methodology was also used.I finish this entry with my personal reflections. 
+
+### **What is it, and why is it important?**
+
+Just like any data recollection tool, Satellites are not always accurate and need some sort of correction or enhancements to improve the images they gather. The distortions can be caused by many things such as wrong view angles, harsh variations in topography, strong winds, or other climactic conditions such as rain or snow. 
+
+Geometric correction is the process in which satellite imagery is corrected. Each image has reference markers, such as each coordinates, which help trace and map images from before and after. All of these images are then passed through different mathematical algorithms for correction. 
+
+There are many different types of correction and enhancement.I will get into further detail about Dark Object Subtraction.
+
+[![Geometric Correction](correction.png)](https://www.mdpi.com/2072-4292/15/16/3965)
+
+### **Types of Correction**
+
+Radiometric: Correcting the digital number to reflectance. Different uses of sensors result in different known values.
+
+Geometric: Deals with data distortion.Requires input to ortho-refortify using control points and DEM (Digital Elevation Model).
+
+Atmospheric: Corrects for atmospheric effects on sensor data. Involves local and empirical methods.
+
+Orthorectification: Involves forcing a view to be correct as if viewed from above.
+
+### **Methods for Enhancement**
+
+All though there are many types of enhancement that can be done to satellite imaging, I will talk about just a few:
+
+**Ratio:**
+Rationing involves calculating the difference between two spectral bands to highlight specific landscape features. The Normalized Difference Vegetation Index (NDVI) is a common example, exploiting the spectral trait where healthy vegetation reflects more in the Near-Infrared (NIR) but absorbs in the Red wavelength. This method is useful for identifying areas with healthy vegetation.
+
+[![Ratio Correction](Screenshot 2024-03-11 114906.png)](https://www.researchgate.net/publication/342413913_Testing_the_Multiple_Pathways_of_Residential_Greenness_to_Pregnancy_Outcomes_Model_in_a_Sample_of_Pregnant_Women_in_the_Metropolitan_Area_of_Donostia-San_Sebastian)
+
+**Filtering:**
+Filtering applies moving window operations to data, which can enhance or suppress certain features. An example is the Laplacian filter, used to highlight edges or contrast in the imagery, thus aiding in feature identification and analysis.
+
+**Texture**
+Texture Analysis focuses on the pixel-to-pixel relationships within an image to describe surface characteristics. This technique is valuable for distinguishing between different land cover types based on their texture, such as smooth grassland or bumpy deciduous forests.
+
+[![Texture Correction](texture correction.png)](https://www.researchgate.net/publication/346042476_STAIR_20_A_Generic_and_Automatic_Algorithm_to_Fuse_Modis_Landsat_and_Sentinel-2_to_Generate_10_m_Daily_and_Cloud-Gap-Free_Surface_Reflectance_Product)
+
+**Joining Data**
+Preprocessing steps performed on collected data. Methods include enhancement, feature extraction, etc.
+
+**Feathering**
+When you join two matching images together. Creates a seamless image without harsh boundaries.
+
+**Mosaicking**
+Images are pieced together to form one large image.
+
+## **In class-application of GLCM Method**
+
+One of the practical exercises this week, was to use the GLCM package in R Studio to correct the texture in some satellite imagery. 
+
+The GLCM method is used to extract statistical measures from satellite images that can help differentiate between different land cover types based on their texture, such as distinguishing forests from urban areas. 
+
+The GLCM package facilitates texture analysis by computing a matrix where the frequency of co-occurring pixel values at a certain spatial relationship is recorded. This matrix is then used to calculate various texture statistics that describe the heterogeneity or patterns within the image. 
+
+- The size of the moving window determines how large an area each calculation considers. A window of size (7, 7) means that for each pixel, the texture is analyzed based on its 7x7 neighbors.
+- The shift parameter defines the spatial relationship between pixel pairs considered in the GLCM. It's essentially the direction and distance between the pair of pixels. 
+- The GLCM package can compute various texture measures such as homogeneity, contrast, and correlation. These measures provide quantitative data on the texture's smoothness, variation, and spatial dependency among pixels. The choice of statistics will depend on the aspect of texture you are interested in analyzing.
+
+Interpretation of results:
+- Color Scale: A value closer to 1 indicates high homogeneity, meaning the texture is very uniform in that area. Values closer to 0 suggest low homogeneity, where the texture is less uniform and more varied.
+- Color Representation: The colors in the image correspond to the homogeneity values at each location. For example, areas colored in green might indicate regions of higher homogeneity, while yellow to pink areas might represent lower homogeneity.
+- Spatial Distribution: The distribution of colors across the plot shows how homogeneity varies spatially. Clusters of similar colors indicate areas with similar texture properties. For example, large green areas would be more uniform in texture, possibly open fields or water bodies, while mixed colors like yellow and pink could suggest urban or forested areas with more complex structures.
+
+## Real world application
+
+While searching for a real life application of this methodology, I found this investigation done in Colombia, specifically in the lower Magdalena river region. It was a very innovative study in which they integrated both Sentinel-1 and Sentinel-2 data to improve the spectral quality in their land cover images. They implemented various correction methodologies as well as more advanced machine learning processes, their objective was to tackle the cloud coverage which always affects imaging in this region of the world. They were very successful in classifying land cover which is a great advance for natural resource management and climate change adaptation, one of Colombia's environmental pillars. 
+
+The scientific journal mentions that within their methodologies, GLCM was used in a to enhance land cover mapping in Colombia. 
+
+## Personal Reflection:
+
+If one is going to learn about remote sensing data, one must also learn about how to correct and enhance the images and data. These techniques make sure that the pictures and data we get from satellites will really show what's happening on Earth. 
+
+As an anthropologist, working in environmental conservation and rural development, and now diving into data science, I am getting very inspired by all of this new information regarding remote sensing. Remote sensing will let me gather lots of info about our planet and using these correction techniques, it will be easier to make smart decisions for the environment and how rural areas develop.
+
+I really enjoyed applying the GLCM method because it provided key insights into the spatial arrangement of pixel values. This could easily be used for land cover classification, environmental monitoring, and urban planning, where understanding the texture is crucial for accurate analysis.This is something that I in-vision myself using in my personal and professional interests.
+
+It was fascinating for me to read the scientific journal of scientists applying what I had applied in a practical, in a real life case of improving image quality to be able to identify and characterise land cover and vegetation. 
+
+## Bibliography
+
+1. Anabitarte, Asier, et al. “Testing the Multiple Pathways of Residential Greenness to Pregnancy Outcomes Model in a Sample of Pregnant Women in the Metropolitan Area of Donostia-San Sebastián.” International Journal of Environmental Research and Public Health, vol. 17, no. 12, 23 June 2020, p. 4520, pubmed.ncbi.nlm.nih.gov/32586011/, https://doi.org/10.3390/ijerph17124520.
+2. Clerici, Nicola, et al. “Fusion of Sentinel-1A and Sentinel-2A Data for Land Cover Mapping: A Case Study in the Lower Magdalena Region, Colombia.” Journal of Maps, vol. 13, no. 2, 12 Sept. 2017, pp. 718–726, https://doi.org/10.1080/17445647.2017.1372316.
+3. Joyce, K., 2013. Radiative transfer and atmospheric correction video
+4. Jensen, J.R., 2015. Introductory digital image processing: a remote sensing perspective. Prentice-Hall Inc.
+5. Oh, Myeongchan, et al. “Real-Time Terrain Correction of Satellite Imagery-Based Solar Irradiance Maps Using Precomputed Data and Memory Optimization.” Remote Sensing, vol. 15, no. 16, 1 Jan. 2023, p. 3965, www.mdpi.com/2072-4292/15/16/3965, https://doi.org/10.3390/rs15163965. Accessed 20 Mar. 2024.
+6. Young, Peter, et al. “From Image Descriptions to Visual Denotations: New Similarity Metrics                     for Semantic Inference over Event Descriptions.” Transactions of the Association for Computational Linguistics, vol. 2, Dec. 2014, pp. 67–78, https://doi.org/10.1162/tacl_a_00166. Accessed 10 Apr. 2020.
+
+
+
