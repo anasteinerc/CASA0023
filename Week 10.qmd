@@ -1,0 +1,8 @@
+```{r echo=FALSE, out.width='100%'}
+
+xaringanExtra::embed_xaringan(
+  url = "C:/Users/USUARIO/Documents/UCL/Term 2/CASA0023/CASA0023/CASA0023 Personal Diary/Revised_Xaringan_Presentation.html",
+  ratio = "16:9"
+)
+
+```
